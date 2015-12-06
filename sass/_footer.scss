@@ -1,0 +1,40 @@
+
+footer {
+	overflow: hidden;
+	background: #dcd9ae;
+	height: 220px;
+}
+.social {
+	margin-top: 65px;
+	text-align: center;
+	li {
+		display: inline-block;
+		margin-right: 10px;
+		.fa {
+			width: 65px;
+    		height: 65px;
+    		border-radius: 100%;
+    		border: 1px solid #9b7e3c;
+    		background-color: #9b7e3c;
+    		line-height: 2.6;
+    		color: #dcd9ae;
+    		transition: all 0.7s;
+		}
+		.fa:hover {
+			background-color: #dcd9ae;
+    		color: #9b7e3c;
+		}
+
+	}
+}
+.copyright {
+	text-align: center;
+    margin-top: 30px;
+	height: 9px;
+	font: 10px/19px 'PTSans';
+	color: #999;
+		a {
+			@include link;
+			color: #9b7e3c;
+		}
+}

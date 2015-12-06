@@ -1,0 +1,14 @@
+@mixin link {
+	a {
+		padding-bottom: 3px;
+		color: #fff;
+		text-decoration: none;
+	}
+	&:link {
+		color: #fff;
+		text-decoration: none
+	}
+	&:visit {
+		color: #fff;
+	}
+}
