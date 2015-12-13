@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<title>Panakeia</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var pull 		= $('.fa-bars');
+            menu 		= $('nav ul');
+            menuHeight	= menu.height();
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+	<header>
+		<h1 class="logo">
+            <a href="#">Panakeia
+                <span>Free PSD template</span></a>
+        </h1>
+        <nav>
+            <ul class="navigation">
+				<li><a href="#">Fusce at</a></li>
+				<li><a href="#">Facilisis </a></li>
+				<li><a href="#">Ante donec</a></li>
+				<li><a href="#">Blandit rhoncus</a></li>
+				<li><a href="#">Placerat</a></li>
+			</ul>
+            <span class="fa fa-bars"></span>
+        </nav>
+    </header>
+    <div class="hero">
+        <h2 class="hero-title">Integer at tortor ut magna
+            <span>finibus lobortis sed quis tellus.</span></h2>
+        <ul class="features">
+            <li>
+                <img src="images/sandwich.png">
+                <h3>Tincidunt</h3>
+                <p>Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. Nullam tempus egestas efficitur. Sed quam dolor.</p>
+            </li>
+
+            <li>
+                <img src="images/cake.png">
+                <h3>Duis bibendum</h3>
+                <p>Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. In hac habitasse platea dictumst. </p>
+            </li>
+            <li>
+                <img src="images/burger.png">
+                <h3>Donec ligula</h3>
+                <p>Nullam tempus egestas efficitur. Sed quam dolor, vulputate sed mattis et, sodales quis orci. Ut arcu arcu, faucibus eu risus blandit,.</p>
+            </li>
+        </ul>
+        <a class="hero-read-more" href="#">Read more</a>
+    </div>
+
+
+		<section id="news">
+			<div class="section-wrapper">
+				<h2 class="title">Our news</h2>
+				<article class="top-news">
+					<img src="images/sandwiches.jpg">
+					<h3>Lorem ipsum</h3>
+					<p>Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.</p>
+					<a href="#" class="read-more">Read more</a>
+				</article>
+				<article class="top-news">
+					<img src="images/cakes.jpg">
+					<h3>Lorem ipsum</h3>
+					<p>Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.</p>
+					<a href="#"class="read-more">Read more</a>
+				</article>
+				<article class="top-news">
+					<img src="images/burgers.jpg">
+					<h3>Lorem ipsum</h3>
+					<p>Est a elit scelerisque vestibulum.Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.</p>
+					<a href="#"class="read-more">Read more</a>
+				</article>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="section-wrapper">
+				<div class="letter">
+				<h2 class="title">Newsletter</h2>
+				<p>Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo,
+					ullamcorper non diam sit amet, luctus condimentum metus</p>
+				<form method="post" action="#">
+					<input type="email" class="subscribe-field" name="email" placeholder="email adress">
+					<input type="submit" class="subscribe" value="Sign up">
+				</form>
+			</div>
+			</div>
+		</section>
+		<section id="portfolio">
+			<div class="section-wrapper">
+				<ul class="product">
+					<li class="product-first">
+                        <img src="images/food-1.jpg" alt="Bread in a basket">
+						<h3 class="title">Ipsum dolor sit amet</h3>
+						<p>Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.</p>
+						<p>Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci sagittis, et accumsan ex porta.</p>
+						<a href="#">Sign up</a>
+					</li>
+					<li class="product-two">
+                        <img src="images/food-2.jpg" alt="Shrimps">
+						<h3 class="title">Ipsum dolor sit amet</h3>
+						<p>Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.</p>
+						<p>Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci sagittis, et accumsan ex porta.</p>
+						<a href="#">Sign up</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="pre-footer">
+			<div class="section-wrapper">
+				<ul class="menu-item">
+					<li><a href="#">Ad litora torquent</a></li>
+					<li><a href="#">Per conubia</a></li>
+					<li><a href="#">Nostra</a></li>
+					<li><a href="#">Per inceptos</a></li>
+					<li><a href="#">Himenaeos</a></li>
+					<li><a href="#">In consectetur</a></li>
+				</ul>
+				<ul class="menu-item">
+					<li><a href="#">Taciti sociosqu</a></li>
+					<li><a href="#">Ad litora torquent</a></li>
+					<li><a href="#">Per conubia</a></li>
+					<li><a href="#">Himenaeos</a></li>
+					<li><a href="#">In consectetur</a></li>
+					<li><a href="#">Nisi sed blandit</a></li>
+					<li><a href="#">Tincidunt</a></li>
+				</ul>
+				<ul class="menu-item">
+					<li><a href="#">Nostra</a></li>
+					<li><a href="#">Per inceptos</a></li>
+					<li><a href="#">Himenaeos</a></li>
+					<li><a href="#">In consectetur</a></li>
+					<li><a href="#">Nisi sed blandit</a></li>
+					<li><a href="#">Tincidunt</a></li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				<span>Try awsome tool for desgners <a class="symu" href="#"> symu.co</a></span></p>
+		</footer>
+</body>
+</html>

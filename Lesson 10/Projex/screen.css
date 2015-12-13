@@ -1,0 +1,877 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../.rvm/gems/ruby-2.2.1/gems/susy-2.2.7/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/screen.scss */
+a:link, a:visited {
+  font: 14px 'Quicksand', sans-serif;
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+/* line 22, ../sass/screen.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 25, ../sass/screen.scss */
+.wrapper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../.rvm/gems/ruby-2.2.1/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
+.wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*@media screen (max-width: 640px
+	960px)
+320px portrait
+480px laindskape
+768px
+1024px
+1200px*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 39, ../sass/screen.scss */
+header {
+  height: 110px;
+  background: #ff5959;
+}
+/* line 42, ../sass/screen.scss */
+header .logo {
+  float: left;
+  margin: 20px 0 0 50px;
+  white-space: pre-line;
+  line-height: 5px;
+  background: url(../images/icons.png) no-repeat;
+  padding-left: 5px;
+  background-position-y: center;
+}
+/* line 50, ../sass/screen.scss */
+header .logo a {
+  padding-left: 30px;
+  font-size: 35px;
+}
+/* line 54, ../sass/screen.scss */
+header .logo strong {
+  color: #e8e8e8;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 62, ../sass/screen.scss */
+.navigation {
+  float: right;
+  margin-top: 40px;
+}
+/* line 65, ../sass/screen.scss */
+.navigation li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+/* line 70, ../sass/screen.scss */
+.navigation li a {
+  padding: 7px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+/* line 76, ../sass/screen.scss */
+.navigation li a:hover {
+  background: #fc7d7d;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 83, ../sass/screen.scss */
+.wrapper-intro {
+  overflow: hidden;
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 89, ../sass/screen.scss */
+.hero {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1.69492%;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+/* line 95, ../sass/screen.scss */
+.hero img {
+  width: 100%;
+}
+/* line 98, ../sass/screen.scss */
+.hero h1 {
+  margin: 30px 0 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+/* line 103, ../sass/screen.scss */
+.hero h1:first-line {
+  font-size: 50px;
+}
+/* line 106, ../sass/screen.scss */
+.hero p {
+  margin-bottom: 40px;
+}
+/* line 109, ../sass/screen.scss */
+.hero .contact-button,
+.hero .team-button {
+  border: 2px solid #ff5959;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font: 700 18px 'DroidSans';
+  transition: all 0.7s;
+}
+/* line 117, ../sass/screen.scss */
+.hero .team-button {
+  padding: 5px 20px 10px;
+  background: #ff5959;
+  transition: all 0.7s;
+}
+/* line 122, ../sass/screen.scss */
+.hero .contact-button {
+  padding: 5px 15px 10px;
+  transition: all 0.7s;
+}
+/* line 126, ../sass/screen.scss */
+.hero .team-button:hover {
+  color: #ff5959;
+  background: #e8e8e8;
+}
+/* line 130, ../sass/screen.scss */
+.hero .contact-button:hover {
+  background: #ff5959;
+  color: #fff;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------------SERVICES--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 140, ../sass/screen.scss */
+#services, #team, #contact {
+  background: #e8e8e8;
+  overflow: hidden;
+}
+
+/* line 144, ../sass/screen.scss */
+#portfolio, #blog, footer {
+  overflow: hidden;
+  background: #ff5959;
+}
+
+/* line 148, ../sass/screen.scss */
+.section-wrapper {
+  overflow: hidden;
+  max-width: 1170px;
+  margin: 55px auto 100px;
+  text-align: center;
+}
+/* line 153, ../sass/screen.scss */
+.section-wrapper h2 {
+  position: relative;
+  margin-bottom: 40px;
+  font: 400 30px/40px 'Quicksand';
+  color: #000;
+  text-transform: capitalize;
+  white-space: pre-line;
+}
+/* line 160, ../sass/screen.scss */
+.section-wrapper h2 span {
+  font-size: 10px;
+}
+/* line 164, ../sass/screen.scss */
+.section-wrapper h2:before,
+.section-wrapper h2:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 170px;
+  border-bottom: 1px solid #5E6369;
+  top: 65px;
+}
+/* line 173, ../sass/screen.scss */
+.section-wrapper h2:after {
+  right: 400px;
+}
+/* line 176, ../sass/screen.scss */
+.section-wrapper h2:before {
+  left: 400px;
+}
+
+/* line 182, ../sass/screen.scss */
+#services .features {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* line 186, ../sass/screen.scss */
+.features h3 {
+  margin: 15px 0;
+  font-size: 24px;
+}
+
+/* line 190, ../sass/screen.scss */
+#services .features li,
+#team .person li {
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 195, ../sass/screen.scss */
+#services .features li {
+  margin-top: 30px;
+  font-family: Quicksand;
+  font-weight: 400;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------PORTFOLIO------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 206, ../sass/screen.scss */
+#portfolio h2,
+#blog h2 {
+  color: #fff;
+}
+
+/* line 210, ../sass/screen.scss */
+#portfolio h2 span
+#blog h2 span {
+  color: #fff;
+}
+
+/* line 214, ../sass/screen.scss */
+#portfolio h2:before,
+#portfolio h2:after,
+#blog h2:before,
+#blog h2:after {
+  border-color: #fff;
+}
+
+/* line 221, ../sass/screen.scss */
+.project li {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1.69492%;
+  position: relative;
+}
+/* line 225, ../sass/screen.scss */
+.project li img {
+  width: 100%;
+}
+/* line 230, ../sass/screen.scss */
+.project span {
+  margin-right: 5px;
+  padding: 5px;
+  background: #ff5959;
+  border-radius: 6px;
+}
+/* line 236, ../sass/screen.scss */
+.project .fa {
+  color: #fff;
+}
+
+/* line 240, ../sass/screen.scss */
+.project-hover,
+.project-hover-line {
+  position: absolute;
+  top: 0;
+  background: rgba(255, 89, 89, 0.5);
+  opacity: 0;
+  text-align: center;
+  border: 1px solid #fff;
+  transition: all 1s;
+}
+
+/* line 250, ../sass/screen.scss */
+.project-hover-line {
+  width: 570px;
+  height: 285px;
+}
+
+/* line 254, ../sass/screen.scss */
+.project-hover {
+  width: 270px;
+  height: 286px;
+  transition: all 1s;
+}
+
+/* line 259, ../sass/screen.scss */
+.project-hover h3,
+.project-hover-line h3 {
+  font: bold 24px 'Quicksand';
+  margin-top: 120px;
+}
+
+/* line 264, ../sass/screen.scss */
+.project-hover:hover,
+.project-hover-line:hover {
+  opacity: 0.9;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------TEAM-----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 275, ../sass/screen.scss */
+.wrapper-team ul {
+  margin: 45px 0 10px;
+}
+
+/* line 279, ../sass/screen.scss */
+.person li {
+  width: 275px;
+}
+/* line 281, ../sass/screen.scss */
+.person li img {
+  border-radius: 100%;
+  border: 2px solid #ff5959;
+  margin-top: 30px;
+}
+/* line 287, ../sass/screen.scss */
+.person h3 {
+  margin-top: 15px;
+}
+/* line 290, ../sass/screen.scss */
+.person p {
+  margin: 15px 0;
+}
+
+/* line 295, ../sass/screen.scss */
+#team .social li {
+  display: inline-block;
+  width: 30px;
+  margin-right: 5px;
+}
+/* line 300, ../sass/screen.scss */
+#team .social .fa {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: #fff;
+  line-height: 2;
+}
+/* line 307, ../sass/screen.scss */
+#team .social .fa-twitter {
+  background: #7acdf1;
+}
+/* line 310, ../sass/screen.scss */
+#team .social .fa-pinterest {
+  background: #ea5150;
+}
+/* line 313, ../sass/screen.scss */
+#team .social .fa-facebook {
+  background: #547bbd;
+}
+/* line 316, ../sass/screen.scss */
+#team .social .fa-google-plus {
+  background: #4c4c4c;
+}
+/* line 319, ../sass/screen.scss */
+#team .social .fa-linkedin {
+  background: #1485c8;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------BLOG-----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 327, ../sass/screen.scss */
+.last-news {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1.69492%;
+  text-align: left;
+  color: #fff;
+}
+/* line 333, ../sass/screen.scss */
+.last-news img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+/* line 337, ../sass/screen.scss */
+.last-news h3 a {
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  transition: all 0.7s;
+}
+
+/* line 345, ../sass/screen.scss */
+.last-news p {
+  margin: 20px 0 10px;
+  font-family: Quicksand;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 351, ../sass/screen.scss */
+.last-news li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+/* line 355, ../sass/screen.scss */
+.last-news li a:hover,
+.last-news a:hover {
+  color: #000;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTACT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 364, ../sass/screen.scss */
+.feedback-container {
+  overflow: hidden;
+}
+
+/* line 367, ../sass/screen.scss */
+.feedback-info,
+.feedback {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1.69492%;
+  text-align: left;
+}
+
+/* line 373, ../sass/screen.scss */
+.feedback li input,
+.feedback li textarea {
+  width: 97%;
+  padding: 15px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+}
+
+/* line 383, ../sass/screen.scss */
+.feedback {
+  margin-right: 30px;
+}
+
+/* line 386, ../sass/screen.scss */
+.feedback ::-webkit-input-placeholder {
+  font-size: 13px;
+  color: #000;
+}
+
+/* line 391, ../sass/screen.scss */
+.feedback-info h3 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+/* line 395, ../sass/screen.scss */
+.feedback-info a {
+  color: #000;
+}
+/* line 398, ../sass/screen.scss */
+.feedback-info ul {
+  margin: 15px 0 40px;
+  line-height: 2;
+}
+/* line 402, ../sass/screen.scss */
+.feedback-info input[type="submit"] {
+  padding: 16px 20px;
+  border: 2px solid #ff5959;
+  border-radius: 10px;
+  background-color: #ff5959;
+  color: #fff;
+  cursor: pointer;
+  font-family: DroidSans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-right: 14px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+}
+/* line 418, ../sass/screen.scss */
+.feedback-info .view-map {
+  padding: 12px 36px 16px;
+  border: 2px solid #ff5959;
+  border-radius: 10px;
+  color: #ff5959;
+  background: #e8e8e8;
+  cursor: pointer;
+  font-family: DroidSans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+}
+/* line 432, ../sass/screen.scss */
+.feedback-info input[type="submit"]:hover {
+  background: #e8e8e8;
+  color: #ff5959;
+}
+/* line 436, ../sass/screen.scss */
+.feedback-info .view-map:hover {
+  background: #ff5959;
+  color: #e8e8e8;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 444, ../sass/screen.scss */
+footer {
+  position: relative;
+  min-height: 115px;
+}
+/* line 447, ../sass/screen.scss */
+footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-----------@media screen and (min-width:480) and (max-width: 599px)---------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /* line 461, ../sass/screen.scss */
+  #services .features li {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%;
+  }
+
+  /* line 465, ../sass/screen.scss */
+  .project li:nth-child(-n+2) {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%;
+  }
+
+  /* line 469, ../sass/screen.scss */
+  .project li:nth-child(n+3) {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 473, ../sass/screen.scss */
+  .project li:nth-child(3),
+  li:nth-child(5) {
+    margin-left: 8.47458%;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-----------@media screen and (min-width:600) -------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /* line 486, ../sass/screen.scss */
+  .hero {
+    margin: 70px auto;
+    max-width: 990px;
+  }
+  /* line 490, ../sass/screen.scss */
+  .hero .contact-button,
+  .hero .team-button {
+    margin-right: 20px;
+    width: 170px;
+    height: 42px;
+  }
+  /* line 496, ../sass/screen.scss */
+  .hero .team-button {
+    padding: 10px 40px 20px;
+  }
+  /* line 499, ../sass/screen.scss */
+  .hero .contact-button {
+    padding: 10px 30px 20px;
+  }
+
+  /* line 503, ../sass/screen.scss */
+  #services .features li {
+    padding: 1.69492%;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 507, ../sass/screen.scss */
+  #services .features li:last-child {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 510, ../sass/screen.scss */
+  .project li:nth-child(-n+2) {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%;
+  }
+
+  /* line 514, ../sass/screen.scss */
+  .project li:nth-child(n+3) {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 518, ../sass/screen.scss */
+  .project li:nth-child(3),
+  li:nth-child(5) {
+    margin-left: 8.47458%;
+  }
+
+  /* line 523, ../sass/screen.scss */
+  #blog .last-news:nth-of-type(-n+2) {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    padding: 1.69492%;
+  }
+  /* line 527, ../sass/screen.scss */
+  #blog .last-news:nth-of-type(2) {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    padding: 1.69492%;
+  }
+  /* line 531, ../sass/screen.scss */
+  #blog .last-news:last-child {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 25.42373%;
+  }
+
+  /* line 536, ../sass/screen.scss */
+  .feedback {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%;
+  }
+
+  /* line 540, ../sass/screen.scss */
+  .feedback-info {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*--------@media screen and (min-width: 768px) -------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  /* line 554, ../sass/screen.scss */
+  .hero {
+    margin: 250px auto;
+  }
+  /* line 556, ../sass/screen.scss */
+  .hero img {
+    float: right;
+    width: auto;
+    margin-left: 35px;
+  }
+  /* line 561, ../sass/screen.scss */
+  .hero p {
+    margin-bottom: 70px;
+  }
+  /* line 564, ../sass/screen.scss */
+  .hero a {
+    margin-right: 15px;
+  }
+
+  /* line 568, ../sass/screen.scss */
+  #services .features li {
+    padding: 1.69492%;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 572, ../sass/screen.scss */
+  #services .features li:last-child {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 576, ../sass/screen.scss */
+  #portfolio .project li:nth-child(-n+2) {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 579, ../sass/screen.scss */
+  #portfolio .project li:nth-child(2) {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 582, ../sass/screen.scss */
+  #portfolio .project li:nth-child(n+3) {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 585, ../sass/screen.scss */
+  #portfolio .project li:last-child {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 588, ../sass/screen.scss */
+  .feedback {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 591, ../sass/screen.scss */
+  .feedback-info {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------@media screen and (min-width: 1024px)--------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  /* line 604, ../sass/screen.scss */
+  #blog img {
+    width: 100%;
+  }
+  /* line 607, ../sass/screen.scss */
+  #blog .last-news {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    padding: 1.69492%;
+  }
+  /* line 611, ../sass/screen.scss */
+  #blog .last-news:last-child {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+    padding: 1.69492%;
+  }
+
+  /* line 616, ../sass/screen.scss */
+  #team .person li {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 618, ../sass/screen.scss */
+  #team .person li:last-child {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+}

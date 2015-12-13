@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>ProJex</title>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('.fa-bars');
+			menu 		= $('nav ul');
+			menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+				var w = $(window).width();
+				if(w > 320 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="wrapper-intro">
+			<header>
+				<div class="logo">
+					<a href="#">ProJex</a>
+					<span>One Page Business Theme</span>
+				</div>
+				<nav class="navigation">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#team">Our Team</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+					<span class="fa fa-bars"></span>
+				</nav>
+			</header>
+			<section class="hero">
+				<img src="images/slider.png" alt="One page business theme">
+				<h1>one page<br>is all that you need</h1>
+				<p>Suspendisse mi nisl, odipiscing sit amet telus sed, auctor aliquet felis. Aenean neque elit, blandit quis tempor eu, feugiat rhoncus lectus. Quisque sit amet pretium risus.</p>
+				<a href="#team" class="team-button">our team</a>
+				<a href="#contact" class="contact-button">contact us</a>
+			</section>
+		</div>
+
+		<section id="services">
+			<div class="section-wrapper">
+				<h2>Our Services
+				<span>&#11042;</span></h2>
+				<ul class="features">
+					<li>
+						<img src="images/analysis.png" alt="services">
+						<h3>HTML 5 & CSS3</h3>
+						<p>Sed fermentum, ante vel sagittis adipiscing, purus nisi ultrices dolor, a aliquam nunc lacus in turpis. Nunc molestie nisi diam. Donec commodo quam sit amet mauris pellentesque, in commodo lorem venenatis. Nullam consequat venenatis fringilla.</p>
+					</li>
+					<li>
+						<img src="images/optimization.png" alt="services">
+						<h3>SEO Optimization</h3>
+						<p>Sed fermentum, ante vel sagittis adipiscing, purus nisi ultrices dolor, a aliquam nunc lacus in turpis. Nunc molestie nisi diam. Donec commodo quam sit amet mauris pellentesque, in commodo lorem venenatis. Nullam consequat venenatis fringilla. </p>
+					</li>
+					<li>
+						<img src="images/design.png" alt="services">
+						<h3>Graphic Design</h3>
+						<p>Sed fermentum, ante vel sagittis adipiscing, purus nisi ultrices dolor, a aliquam nunc lacus in turpis. Nunc molestie nisi diam. Donec commodo quam sit amet mauris pellentesque, in commodo lorem venenatis. Nullam consequat venenatis fringilla. </p>
+					</li>
+				</ul>	
+			</div>
+		</section>
+		<section id="portfolio">
+			<div class="section-wrapper">
+				<h2>Our Portfolio
+				<span>&#11042;</span></h2>
+				<ul class="project">
+					<li><a href=""><img src="images/portfolio_1.jpg"></a>
+						<div class="project-hover-line">
+							<h3>Love Conquers All</h3>
+							<a href=""><span class="fa fa-arrows"></span></a>
+							<a href=""><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li><a href=""><img src="images/portfolio_2.jpg"></a>
+						<div class="project-hover-line">
+							<h3>Love Conquers All</h3>
+							<a href=""><span class="fa fa-arrows"></span></a>
+							<a href=""><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li><a href=""><img src="images/img_1.jpg"></a>
+						<div class="project-hover">
+							<h3>Love Conquers All</h3>
+							<a href=""><span class="fa fa-arrows"></span></a>
+							<a href=""><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li><a href=""><img src="images/img_2.jpg"></a>
+						<div class="project-hover">
+							<h3>Love Conquers All</h3>
+							<ul>
+								<li><a href=""><span class="fa fa-arrows"></span></a></li>
+								<li><a href=""><span class="fa fa-star"></span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href=""><img src="images/img_3.jpg"></a>
+						<div class="project-hover">
+							<h3>Love Conquers All</h3>
+							<a href=""><span class="fa fa-arrows"></span></a>
+							<a href=""><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li><a href=""><img src="images/img_4.jpg"></a>
+						<div class="project-hover">
+							<h3>Love Conquers All</h3>
+							<a href=""><span class="fa fa-arrows"></span></a>
+							<a href=""><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="team">
+			<div class="section-wrapper">
+				<h2>Our Wonderful Team
+				<span>&#11042;</span></h2>
+				<ul class="person">
+					<li><img src="images/person.jpg">
+						<h3>Georje Sjöstedt</h3>
+						<span>CEO/Founder</span>
+						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						<ul class="social">
+							<li><a href=""><span class="fa fa-twitter"></span></a></li>
+							<li><a href=""><span class="fa fa-pinterest"></span></a></li>
+							<li><a href=""><span class="fa fa-facebook"></span></a></li>
+							<li><a href=""><span class="fa fa-google-plus"></span></a></li>
+							<li><a href=""><span class="fa fa-linkedin"></span></a></li>
+						</ul>
+					</li>
+					<li><img src="images/person.jpg">
+						<h3>Dan Aase</h3>
+						<span>CEO/Founder</span>
+						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						<ul class="social">
+							<li><a href=""><span class="fa fa-twitter"></span></a></li>
+							<li><a href=""><span class="fa fa-pinterest"></span></a></li>							
+							<li><a href=""><span class="fa fa-facebook"></span></a></li>
+							<li><a href=""><span class="fa fa-google-plus"></span></a></li>
+							<li><a href=""><span class="fa fa-linkedin"></span></a></li>
+						</ul>
+					</li>
+					<li><img src="images/person.jpg">
+						<h3>Kenneth Ericsson</h3>
+						<span>CEO/Founder</span>
+						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						<ul class="social">
+							<li><a href=""><span class="fa fa-twitter"></span></a></li>
+							<li><a href=""><span class="fa fa-pinterest"></span></a></li>
+							<li><a href=""><span class="fa fa-facebook"></span></a></li>
+							<li><a href=""><span class="fa fa-google-plus"></span></a></li>
+							<li><a href=""><span class="fa fa-linkedin"></span></a></li>
+						</ul>
+					</li>
+					<li><img src="images/person.jpg">
+						<h3>Christian Cacares</h3>
+						<span>CEO/Founder</span>
+						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						<ul class="social">
+							<li><a href=""><span class="fa fa-twitter"></span></a></li>
+							<li><a href=""><span class="fa fa-pinterest"></span></a></li>
+							<li><a href=""><span class="fa fa-facebook"></span></a></li>
+							<li><a href=""><span class="fa fa-google-plus"></span></a></li>
+							<li><a href=""><span class="fa fa-linkedin"></span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="blog">
+			<div class="section-wrapper">
+				<h2>The Latest News
+				<span>&#11042;</span></h2>
+				<article class="last-news">
+					<img src="images/news.jpg">
+					<h3><a href="#">Theme HotelDeluxe Released</a></h3>
+					<span class="fa fa-calendar-o"></span>
+					<span> 15th September, 21:24</span>
+					<p>Nunc vitae euismod orci, sit amet hendrerit est. Nulla id ipsum rhoncus, porttitor ipsum ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla. Lorem ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla...</p>
+					<ul>
+						<li><a href=""><span class="fa fa-user"></span>  Don Aase</a></li>
+						<li><a href=""><span class="fa fa-comments-o"></span>  21 Comments</a></li>
+					</ul>
+				</article>
+				<article class="last-news">
+					<img src="images/news.jpg">
+					<h3><a href="#">Theme HotelDeluxe Released</a></h3>
+					<span class="fa fa-calendar-o"></span>
+					<span> 15th September, 21:24</span>
+					<p>Nunc vitae euismod orci, sit amet hendrerit est. Nulla id ipsum rhoncus, porttitor ipsum ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla. Lorem ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla...</p>
+					<ul>
+						<li><a href=""><span class="fa fa-user"></span>  Don Aase</a></li>
+						<li><a href=""><span class="fa fa-comments-o"></span>  21 Comments</a></li>
+					</ul>
+				</article>
+				<article class="last-news">
+					<img src="images/news.jpg">
+					<h3><a href="#">Theme HotelDeluxe Released</a></h3>
+					<span class="fa fa-calendar-o"></span>
+					<span> 15th September, 21:24</span>
+					<p>Nunc vitae euismod orci, sit amet hendrerit est. Nulla id ipsum rhoncus, porttitor ipsum ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla. Lorem ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla...</p>
+					<ul>
+						<li><a href=""><span class="fa fa-user"></span>  Don Aase</a></li>
+						<li><a href=""><span class="fa fa-comments-o"></span>  21 Comments</a></li>
+					</ul>
+				</article>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="section-wrapper">
+				<h2>Contact Us
+				<span>&#11042;</span></h2>
+				<div class="feedback-container">
+					<form action="" method="post" class="feedback">
+						<fieldset>
+							<ul>
+								<li>
+									<input name="name" type="text" placeholder="Full Name">
+								</li>
+								<li>
+									<input name="email" type="email" placeholder="E-mail Adress">
+								</li>
+								<li>
+									<textarea rows="11"  name="text" placeholder="Message"></textarea>
+								</li>
+							</ul>
+						</fieldset>
+					</form>
+					<div class="feedback-info">
+						<h3>Information</h3>
+						<p>Proin nec dignissim tellus, ut hendrerit erat. Vivamus ut augue ac est sagittis ullamcorper a porttitor nibh. Donec non tortor consequat, sollicitudin odio id, vehicula lorem. Suspendisse a euismod sem. Mauris rutrum arcu a lorem aliquet feugiat. Praesent tincidunt lacus at nisl pharetra, nec suscipit risus lobortis. Nunc vitae enim a quam ultrices faucibus. Proin sit amet condimentum libero, ac dignissim enim. Praesent aliquam lacinia dapibus.</p>
+						<ul>
+							<li><span class="fa fa-map-marker"></span> <a href="#">StreetName 163, 254 23 City</a></li>
+							<li><span class="fa fa-phone"></span> <a href="tel:(+254) 001 454 333 66">(+254) 001 454 333 66</a></li>
+						</ul>
+						<input type="submit" form="" value="Send message">
+						<a class="view-map" href="#">view map</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="section-wrapper">
+				<p><span class="fa fa-copyright"></span> Copyright 2013 By Projex - All rights Reserved!</p>
+			</div>
+		</footer>
+	<div>
+</body>
+</html>

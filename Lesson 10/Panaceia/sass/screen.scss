@@ -1,0 +1,495 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "susy";
+
+$susy: (
+        columns: 12,
+        container: 1170px,
+        global-box-sizing: border-box
+);
+@include border-box-sizing;
+
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url('../fonts/proximanova-light-webfont.eot');
+  src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
+  url('../fonts/proximanova-light-webfont.woff') format('woff'),
+  url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+  url('../fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'RobotoSlab';
+}
+.section-wrapper,
+.features {
+  @include container;
+  overflow: hidden;
+  text-align: center;
+}
+
+:focus {
+  outline:none;
+}
+a:link,
+a:visited {
+  font:12px 'RobotoSlab', sans-serif;
+  color:#000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+/*------------------------------------HEADER---------------------------------------*/
+header {
+  overflow: hidden;
+  .logo {
+    float: left;
+    width: 200px;
+    margin: 10px 0 10px 30px;
+    white-space: pre-line;
+    a {
+      color: #31353e;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+    span {
+      color: #dd4b2b;
+      font-size: 16px;
+      line-height: 36px;
+    }
+  }
+}
+
+/*------------------------------------NAVIGATION---------------------------------------*/
+.navigation {
+  a {
+    padding: 5px 10px;
+    border-radius: 25px;
+    font: 18px/24px 'RobotoSlab';
+    color: #31353e;
+    transition: all 0.8s;
+  }
+  a:hover {
+    background: #dd4b2b;
+    color: #edeff1;
+  }
+}
+
+  nav {
+    height: auto;
+    ul {
+      width: 100%;
+      display: block;
+      height: auto;
+      display: none;
+    }
+    li {
+      text-align: center;
+      width: 100%;
+      margin: 15px;
+    }
+    .fa-bars {
+      position: absolute;
+      top: 45px;
+      right: 30px;
+    }
+  }
+
+/*------------------------------------HERO---------------------------------------*/
+.hero {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 150px;
+  background: url("../images/background.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  .hero-title {
+    margin: 50px 0 120px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    font-size: 72px;
+    white-space: pre-line;
+      span {
+        font-size: 30px;
+        font-weight: 700;
+      }
+  }
+  .hero-read-more {
+    padding: 20px 60px;
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 27px;
+    color: #612316;
+    font-size: 18px;
+    transition: all 0.8s;
+  }
+  .hero-read-more:hover {
+    background: #dd4b2b;
+    color: #edeff1;
+  }
+}
+.features {
+  margin-bottom: 80px;
+
+  li {
+    img {
+      margin: 40px 0 30px;
+    }
+    h3 {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+  }
+}
+
+/*------------------------------------NEWS---------------------------------------*/
+#news {
+  background: #edeff1;
+}
+.title {
+  margin: 35px 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.top-news {
+  margin-bottom: 30px;
+  color: #31353e;
+  h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+   p {
+    margin: 20px 0 35px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .read-more {
+    padding: 20px 50px;
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 27px;
+    color: #4e5159;
+    font: 15px/30px 'Roboto';
+    transition: all 0.8s;
+  }
+  .read-more:hover {
+    background: #dd4b2b;
+    color: #edeff1;
+  }
+}
+
+
+
+/*------------------------------------CONTACT---------------------------------------*/
+#contact {
+  background: url("../images/food.jpg") no-repeat;
+  background-size: cover;
+  font-family: 'Roboto';
+  color: #fff;
+  p {
+    margin-bottom: 40px;
+    font-size: 15px;
+    @include span(10 of 12);
+    @include push(1);
+  }
+  form {
+    margin-bottom: 40px;
+      input[type="email"] {
+        width: 300px;
+        height: 34px;
+        margin-right: -75px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 27px;
+        font-size: 18px;
+      }
+      ::-webkit-input-placeholder {
+          padding-left: 10px;
+          color: #f3f4f6;
+      }
+      ::-moz-placeholder {
+        padding-left: 10px;
+        color: #f3f4f6;
+      }
+    input[type="email"]:focus {
+      border: 2px solid #dd4b2b;
+      border-radius: 27px;
+    }
+      input[type="submit"] {
+        width: 70px;
+        height: 34px;
+        background-color: white;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 27px;
+        color: #612316;
+        font-family: 'RobotoSlab';
+        font-size: 18px;
+        line-height: 30px;
+        cursor: pointer;
+      }
+  }
+}
+/*------------------------------------PORTFOLIO---------------------------------------*/
+.product li {
+  @include span(12 of 12);
+  padding: gutter();
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 35px;
+  }
+  img {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #dbdbdb;
+  }
+  a {
+    padding: 15px 65px;
+    border-radius: 27px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font: 400 18px/30px 'RobotoSlab';
+  }
+}
+  .product-first a {
+    background-color: #dd4b2b;
+    transition: all 0.8s;
+  }
+ .product-first a:hover {
+   background-color: #4b4e73;
+  }
+ .product-two a {
+    background-color: #4b4e73;
+   transition: all 0.8s;
+  }
+  .product-two a:hover {
+    background-color: #dd4b2b;
+ }
+
+  /*------------------------------------PRE-FOOTER---------------------------------------*/
+#pre-footer {
+  background: #d75d0e;
+  a {
+    color: white;
+    font: 18px/36px 'Roboto';
+    transition: all 0.5s;
+  }
+  a:hover {
+    color: #31353e;
+  }
+  .menu-item {
+    @include span(12 of 12);
+    margin-top: 30px;
+  }
+  .menu-item:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+/*------------------------------------FOOTER---------------------------------------*/
+footer {
+  background: url("../images/food.jpg") no-repeat;
+  background-size: cover;
+  height: 200px;
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+  font:18px/15px 'ProximaNova';
+  white-space: pre-line;
+  p {
+    @include span(10 of 12);
+    @include push(1);
+  }
+  .symu {
+    color: #fff;
+    font-weight: 700;
+  }
+}
+/*----------------------@media screen and (max-width: 480px)-----------------------------*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .features li {
+    @include span(12 of 12);
+    padding: gutter();
+  }
+  #news article {
+    @include span(12 of 12);
+    padding: gutter();
+  }
+}
+
+/*------------------@media screen and (min-width: 480px) and (max-width: 640px)-------------------------*/
+
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  .hero {
+    background-position: center;
+  }
+  .features li {
+    @include span(8 of 12);
+    @include push(2);
+  }
+  #news article {
+    @include span(9 of 12);
+    @include push(1.5);
+  }
+  #pre-footer {
+    .menu-item {
+      @include span(4 of 12);
+
+      &:last-child {
+        @include span(4 of 12 last);
+      }
+    }
+}
+}
+
+/*----------------------@media screen and (min-width: 640px)-----------------------------*/
+@media screen and (min-width: 641px)  {
+    nav {
+      height: auto;
+      ul {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-top: 25px;
+        text-align: center;
+      }
+      li {
+        display: inline-block;
+        margin: 0 10px 10px 0;
+        width: auto;
+      }
+      .fa-bars {
+        display: none;
+      }
+    }
+
+  .hero {
+    background-position: center;
+    .hero-title {
+      margin-top: 180px;
+    }
+  }
+  .features li {
+    @include span(4 of 12);
+  }
+  .features li:last-child {
+    @include span(4 of 12 last);
+  }
+  #news article {
+    @include span(4 of 12);
+    padding: gutter();
+    img {
+      width: 100%;
+    }
+  }
+  #news article:last-child {
+    @include span(4 of 12 last);
+    padding: gutter();
+  }
+  .product {
+    text-align: left;
+    .title {
+      margin: 10px 0 20px;
+    }
+    li img {
+      width: 45%;
+      box-shadow: 0px 0px 10px 5px #ccc;
+    }
+  }
+  .product-first img {
+    float: right;
+    margin-left: 20px;
+  }
+  .product-two img {
+    float: left;
+    margin-right: 20px;
+  }
+  #pre-footer {
+    .menu-item {
+      @include span(4 of 12);
+
+      &:last-child {
+        @include span(4 of 12 last);
+      }
+    }
+  }
+}
+
+
+/*----------------------@media screen and (min-width: 1024px)-----------------------------*/
+
+@media screen and (min-width: 1024px) {
+  .title {
+    margin-top: 100px;
+  }
+  header {
+    min-width: 1024px;
+    margin: 0 auto;
+    nav {
+      float: right;
+      .navigation {
+        margin-top: 35px;
+        a {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
+  .hero .hero-title {
+    margin-top: 400px;
+    line-height: 48px;
+  }
+
+  #contact {
+    background-position-x: center;
+    .letter {
+      @include span(7 of 12);
+      @include push(2.5);
+    }
+    form {
+      margin-bottom: 100px;
+      input[type="email"] {
+        width: 510px;
+        height: 55px;
+        margin-right: -150px;
+      }
+      input[type="submit"] {
+        height: 55px;
+        width: 215px;
+      }
+    }
+  }
+
+  .product {
+    .title {
+      margin-top: 70px;
+    }
+  }
+  .product-first img {
+    margin: 30px 0 0 50px;
+  }
+  .product-two img {
+    margin: 30px 70px 80px 0;
+  }
+  #pre-footer .menu-item {
+    margin: 100px 0 80px;
+  }
+  footer {
+    height: 370px;
+    p {
+      margin-top: 35px;
+    }
+  }
+}

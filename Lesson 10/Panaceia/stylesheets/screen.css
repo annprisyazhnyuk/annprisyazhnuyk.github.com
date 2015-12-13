@@ -1,0 +1,703 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../.rvm/gems/ruby-2.2.1/gems/susy-2.2.7/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url("../fonts/proximanova-light-webfont.eot");
+  src: url("../fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-light-webfont.woff2") format("woff2"), url("../fonts/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proximanova-light-webfont.svg#proxima_novalight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 28, ../sass/screen.scss */
+body {
+  font-family: 'RobotoSlab';
+}
+
+/* line 31, ../sass/screen.scss */
+.section-wrapper,
+.features {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 12, ../../../.rvm/gems/ruby-2.2.1/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
+.section-wrapper:after,
+.features:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 38, ../sass/screen.scss */
+:focus {
+  outline: none;
+}
+
+/* line 41, ../sass/screen.scss */
+a:link,
+a:visited {
+  font: 12px 'RobotoSlab', sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 47, ../sass/screen.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*------------------------------------HEADER---------------------------------------*/
+/* line 51, ../sass/screen.scss */
+header {
+  overflow: hidden;
+}
+/* line 53, ../sass/screen.scss */
+header .logo {
+  float: left;
+  width: 200px;
+  margin: 10px 0 10px 30px;
+  white-space: pre-line;
+}
+/* line 58, ../sass/screen.scss */
+header .logo a {
+  color: #31353e;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 26px;
+}
+/* line 64, ../sass/screen.scss */
+header .logo span {
+  color: #dd4b2b;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+/*------------------------------------NAVIGATION---------------------------------------*/
+/* line 74, ../sass/screen.scss */
+.navigation a {
+  padding: 5px 10px;
+  border-radius: 25px;
+  font: 18px/24px 'RobotoSlab';
+  color: #31353e;
+  transition: all 0.8s;
+}
+/* line 81, ../sass/screen.scss */
+.navigation a:hover {
+  background: #dd4b2b;
+  color: #edeff1;
+}
+
+/* line 87, ../sass/screen.scss */
+nav {
+  height: auto;
+}
+/* line 89, ../sass/screen.scss */
+nav ul {
+  width: 100%;
+  display: block;
+  height: auto;
+  display: none;
+}
+/* line 95, ../sass/screen.scss */
+nav li {
+  text-align: center;
+  width: 100%;
+  margin: 15px;
+}
+/* line 100, ../sass/screen.scss */
+nav .fa-bars {
+  position: absolute;
+  top: 45px;
+  right: 30px;
+}
+
+/*------------------------------------HERO---------------------------------------*/
+/* line 108, ../sass/screen.scss */
+.hero {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 150px;
+  background: url("../images/background.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+/* line 116, ../sass/screen.scss */
+.hero .hero-title {
+  margin: 50px 0 120px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  font-size: 72px;
+  white-space: pre-line;
+}
+/* line 121, ../sass/screen.scss */
+.hero .hero-title span {
+  font-size: 30px;
+  font-weight: 700;
+}
+/* line 126, ../sass/screen.scss */
+.hero .hero-read-more {
+  padding: 20px 60px;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  color: #612316;
+  font-size: 18px;
+  transition: all 0.8s;
+}
+/* line 135, ../sass/screen.scss */
+.hero .hero-read-more:hover {
+  background: #dd4b2b;
+  color: #edeff1;
+}
+
+/* line 140, ../sass/screen.scss */
+.features {
+  margin-bottom: 80px;
+}
+/* line 144, ../sass/screen.scss */
+.features li img {
+  margin: 40px 0 30px;
+}
+/* line 147, ../sass/screen.scss */
+.features li h3 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+/*------------------------------------NEWS---------------------------------------*/
+/* line 155, ../sass/screen.scss */
+#news {
+  background: #edeff1;
+}
+
+/* line 158, ../sass/screen.scss */
+.title {
+  margin: 35px 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+/* line 164, ../sass/screen.scss */
+.top-news {
+  margin-bottom: 30px;
+  color: #31353e;
+}
+/* line 167, ../sass/screen.scss */
+.top-news h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+/* line 172, ../sass/screen.scss */
+.top-news p {
+  margin: 20px 0 35px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 300;
+}
+/* line 178, ../sass/screen.scss */
+.top-news .read-more {
+  padding: 20px 50px;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  color: #4e5159;
+  font: 15px/30px 'Roboto';
+  transition: all 0.8s;
+}
+/* line 187, ../sass/screen.scss */
+.top-news .read-more:hover {
+  background: #dd4b2b;
+  color: #edeff1;
+}
+
+/*------------------------------------CONTACT---------------------------------------*/
+/* line 196, ../sass/screen.scss */
+#contact {
+  background: url("../images/food.jpg") no-repeat;
+  background-size: cover;
+  font-family: 'Roboto';
+  color: #fff;
+}
+/* line 201, ../sass/screen.scss */
+#contact p {
+  margin-bottom: 40px;
+  font-size: 15px;
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 8.47458%;
+}
+/* line 207, ../sass/screen.scss */
+#contact form {
+  margin-bottom: 40px;
+}
+/* line 209, ../sass/screen.scss */
+#contact form input[type="email"] {
+  width: 300px;
+  height: 34px;
+  margin-right: -75px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  font-size: 18px;
+}
+/* line 218, ../sass/screen.scss */
+#contact form ::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: #f3f4f6;
+}
+/* line 222, ../sass/screen.scss */
+#contact form ::-moz-placeholder {
+  padding-left: 10px;
+  color: #f3f4f6;
+}
+/* line 226, ../sass/screen.scss */
+#contact form input[type="email"]:focus {
+  border: 2px solid #dd4b2b;
+  border-radius: 27px;
+}
+/* line 230, ../sass/screen.scss */
+#contact form input[type="submit"] {
+  width: 70px;
+  height: 34px;
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  color: #612316;
+  font-family: 'RobotoSlab';
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+/*------------------------------------PORTFOLIO---------------------------------------*/
+/* line 245, ../sass/screen.scss */
+.product li {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1.69492%;
+  margin-bottom: 20px;
+}
+/* line 249, ../sass/screen.scss */
+.product li p {
+  margin-bottom: 35px;
+}
+/* line 252, ../sass/screen.scss */
+.product li img {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #dbdbdb;
+}
+/* line 257, ../sass/screen.scss */
+.product li a {
+  padding: 15px 65px;
+  border-radius: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font: 400 18px/30px 'RobotoSlab';
+}
+
+/* line 265, ../sass/screen.scss */
+.product-first a {
+  background-color: #dd4b2b;
+  transition: all 0.8s;
+}
+
+/* line 269, ../sass/screen.scss */
+.product-first a:hover {
+  background-color: #4b4e73;
+}
+
+/* line 272, ../sass/screen.scss */
+.product-two a {
+  background-color: #4b4e73;
+  transition: all 0.8s;
+}
+
+/* line 276, ../sass/screen.scss */
+.product-two a:hover {
+  background-color: #dd4b2b;
+}
+
+/*------------------------------------PRE-FOOTER---------------------------------------*/
+/* line 281, ../sass/screen.scss */
+#pre-footer {
+  background: #d75d0e;
+}
+/* line 283, ../sass/screen.scss */
+#pre-footer a {
+  color: white;
+  font: 18px/36px 'Roboto';
+  transition: all 0.5s;
+}
+/* line 288, ../sass/screen.scss */
+#pre-footer a:hover {
+  color: #31353e;
+}
+/* line 291, ../sass/screen.scss */
+#pre-footer .menu-item {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+}
+/* line 295, ../sass/screen.scss */
+#pre-footer .menu-item:last-child {
+  margin-bottom: 30px;
+}
+
+/*------------------------------------FOOTER---------------------------------------*/
+/* line 301, ../sass/screen.scss */
+footer {
+  background: url("../images/food.jpg") no-repeat;
+  background-size: cover;
+  height: 200px;
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+  font: 18px/15px 'ProximaNova';
+  white-space: pre-line;
+}
+/* line 310, ../sass/screen.scss */
+footer p {
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 8.47458%;
+}
+/* line 314, ../sass/screen.scss */
+footer .symu {
+  color: #fff;
+  font-weight: 700;
+}
+
+/*----------------------@media screen and (max-width: 480px)-----------------------------*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* line 321, ../sass/screen.scss */
+  .features li {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.69492%;
+  }
+
+  /* line 325, ../sass/screen.scss */
+  #news article {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.69492%;
+  }
+}
+/*------------------@media screen and (min-width: 480px) and (max-width: 640px)-------------------------*/
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  /* line 334, ../sass/screen.scss */
+  .hero {
+    background-position: center;
+  }
+
+  /* line 337, ../sass/screen.scss */
+  .features li {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 16.94915%;
+  }
+
+  /* line 341, ../sass/screen.scss */
+  #news article {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 12.71186%;
+  }
+
+  /* line 346, ../sass/screen.scss */
+  #pre-footer .menu-item {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 349, ../sass/screen.scss */
+  #pre-footer .menu-item:last-child {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/*----------------------@media screen and (min-width: 640px)-----------------------------*/
+@media screen and (min-width: 641px) {
+  /* line 358, ../sass/screen.scss */
+  nav {
+    height: auto;
+  }
+  /* line 360, ../sass/screen.scss */
+  nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-top: 25px;
+    text-align: center;
+  }
+  /* line 367, ../sass/screen.scss */
+  nav li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    width: auto;
+  }
+  /* line 372, ../sass/screen.scss */
+  nav .fa-bars {
+    display: none;
+  }
+
+  /* line 377, ../sass/screen.scss */
+  .hero {
+    background-position: center;
+  }
+  /* line 379, ../sass/screen.scss */
+  .hero .hero-title {
+    margin-top: 180px;
+  }
+
+  /* line 383, ../sass/screen.scss */
+  .features li {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 386, ../sass/screen.scss */
+  .features li:last-child {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 389, ../sass/screen.scss */
+  #news article {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    padding: 1.69492%;
+  }
+  /* line 392, ../sass/screen.scss */
+  #news article img {
+    width: 100%;
+  }
+
+  /* line 396, ../sass/screen.scss */
+  #news article:last-child {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+    padding: 1.69492%;
+  }
+
+  /* line 400, ../sass/screen.scss */
+  .product {
+    text-align: left;
+  }
+  /* line 402, ../sass/screen.scss */
+  .product .title {
+    margin: 10px 0 20px;
+  }
+  /* line 405, ../sass/screen.scss */
+  .product li img {
+    width: 45%;
+    box-shadow: 0px 0px 10px 5px #ccc;
+  }
+
+  /* line 410, ../sass/screen.scss */
+  .product-first img {
+    float: right;
+    margin-left: 20px;
+  }
+
+  /* line 414, ../sass/screen.scss */
+  .product-two img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  /* line 419, ../sass/screen.scss */
+  #pre-footer .menu-item {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 422, ../sass/screen.scss */
+  #pre-footer .menu-item:last-child {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/*----------------------@media screen and (min-width: 1024px)-----------------------------*/
+@media screen and (min-width: 1024px) {
+  /* line 433, ../sass/screen.scss */
+  .title {
+    margin-top: 100px;
+  }
+
+  /* line 436, ../sass/screen.scss */
+  header {
+    min-width: 1024px;
+    margin: 0 auto;
+  }
+  /* line 439, ../sass/screen.scss */
+  header nav {
+    float: right;
+  }
+  /* line 441, ../sass/screen.scss */
+  header nav .navigation {
+    margin-top: 35px;
+  }
+  /* line 443, ../sass/screen.scss */
+  header nav .navigation a {
+    padding: 10px 20px;
+  }
+
+  /* line 450, ../sass/screen.scss */
+  .hero .hero-title {
+    margin-top: 400px;
+    line-height: 48px;
+  }
+
+  /* line 455, ../sass/screen.scss */
+  #contact {
+    background-position-x: center;
+  }
+  /* line 457, ../sass/screen.scss */
+  #contact .letter {
+    width: 57.62712%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 21.18644%;
+  }
+  /* line 461, ../sass/screen.scss */
+  #contact form {
+    margin-bottom: 100px;
+  }
+  /* line 463, ../sass/screen.scss */
+  #contact form input[type="email"] {
+    width: 510px;
+    height: 55px;
+    margin-right: -150px;
+  }
+  /* line 468, ../sass/screen.scss */
+  #contact form input[type="submit"] {
+    height: 55px;
+    width: 215px;
+  }
+
+  /* line 476, ../sass/screen.scss */
+  .product .title {
+    margin-top: 70px;
+  }
+
+  /* line 480, ../sass/screen.scss */
+  .product-first img {
+    margin: 30px 0 0 50px;
+  }
+
+  /* line 483, ../sass/screen.scss */
+  .product-two img {
+    margin: 30px 70px 80px 0;
+  }
+
+  /* line 486, ../sass/screen.scss */
+  #pre-footer .menu-item {
+    margin: 100px 0 80px;
+  }
+
+  /* line 489, ../sass/screen.scss */
+  footer {
+    height: 370px;
+  }
+  /* line 491, ../sass/screen.scss */
+  footer p {
+    margin-top: 35px;
+  }
+}
