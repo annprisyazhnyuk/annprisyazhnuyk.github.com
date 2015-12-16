@@ -7,8 +7,8 @@
 
 @import "grids";
 
-
 @import "_header";
+@import "_footer";
 
 @include border-box-sizing();
 
@@ -33,7 +33,7 @@ img {
   padding: 0 15px;
 }
 /*-------------------------------HERO----------------------------------------------------*/
-.hero {
+#hero {
   position: relative;
   min-height: 400px;
   padding: 110px 0;
@@ -87,6 +87,7 @@ img {
 
     @media screen and (min-width: 768px){
       bottom: 90px;
+      font-size: 35px;
     }
   }
 }
@@ -101,16 +102,20 @@ img {
     font-size: 40px;
   }
 }
-.intro {
+#intro {
   padding-bottom: 60px;
   background: #f6f9f9;
+  line-height: 32px;
   text-align: center;
-  h2 {
+  .section-title {
     margin-bottom: 15px;
+    @media screen and (min-width: 900px) {
+      margin-bottom: 30px;
+    }
   }
 }
 /*--------------------------------------SERVICES------------------------------------------*/
-.services {
+#services {
   text-align: center;
   .features {
     margin-bottom: 20px;
@@ -128,26 +133,20 @@ img {
       color: #2d3950;
       font-size: 22px;
     }
-    @media screen and (min-width: 600px) {
-      @include span(10 of 12);
-      @include push(1);
-    }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 900px) {
+      margin: 40px 0 65px;
+      overflow: hidden;
       li {
-        @include span(6 of 12);
-      }
-      li:nth-child(2) {
-      @include span(6 of 12 last);
-    }
-      li:last-child {
-        @include span(6 of 12);
-        @include push(3);
+        @include span(4 of 12);
+        &:last-child {
+          @include span(4 of 12 last);
+        }
       }
     }
   }
 }
 /*--------------------------------------PORTFOLIO------------------------------------------*/
-.portfolio {
+#portfolio {
   background: #f6f9f9;
   text-align: center;
   h5 {
@@ -157,9 +156,12 @@ img {
     display: inline-block;
     position: relative;
     margin: 15px 0;
+    @media screen and (min-width: 900px) {
+      @include gallery(4 of 12);
+    }
     .portfolio-rollover {
       position: absolute;
-      top:0;
+      top: 0;
       width: 100%;
       height: 100%;
       background: #15a4fa;
@@ -172,6 +174,12 @@ img {
       li {
         display: inline-block;
         line-height: 10;
+        @media screen and (min-width: 900px) {
+          margin: 0;
+          float: none;
+          width: auto;
+          line-height: 13;
+        }
         .fa {
           width: 42px;
           height: 42px;
@@ -187,7 +195,7 @@ img {
   }
 }
 /*--------------------------------------CONTACT-US------------------------------------------*/
-.contact-us {
+#contact-us {
   background: url("../images/bg-contact.jpg") no-repeat;
   background-size: cover;
   .bg-overlay {
@@ -249,8 +257,8 @@ img {
       height: 150px;
     }
     @media screen and (min-width: 600px) {
-      @include span(10 of 12);
-      @include push(1);
+      width: span(10);
+      margin: 0 auto;
       li:nth-child(4) {
         float: left;
         margin-top: 20px;
@@ -259,53 +267,10 @@ img {
         float: right;
         margin: 20px 0;
       }
-    }
-  }
-}
-/*---------------------------------------------FOOTER-----------------------------------------*/
-footer {
-  background: #f6f9f9;
-  text-align: center;
-  .copyright {
-    margin: 15px 0 5px;
-    font-size: 15px;
-    @media screen and (min-width: 600px) {
-      float: left;
-      line-height: 4;
-    }
-  }
-  .social-network {
-    margin-bottom: 20px;
-    @media screen and (min-width: 600px) {
-      float: right;
-      margin-bottom: 0;
-      line-height: 4;
-    }
-    li {
-      display: inline-block;
-      margin-right: 10px;
-      text-align: center;
-    }
-    .fa {
-      width: 40px;
-      height: 40px;
-      background: #15a4fa;
-      border-radius: 2px;
-      color: #fff;
-      line-height: 2;
-      transition: all 0.8s;
-    }
-    .fa-facebook:hover {
-      background: #3b5998;
-    }
-    .fa-twitter:hover {
-      background: #55acee;
-    }
-    .fa-google-plus:hover {
-      background: #dd4b39;
-    }
-    .fa-linkedin:hover {
-      background: #0976b4;
+      @media screen and (min-width: 900px) {
+        width: span(6);
+        margin: 0 auto;
+      }
     }
   }
 }

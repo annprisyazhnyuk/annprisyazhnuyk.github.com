@@ -2,12 +2,17 @@ header {
   height: 99px;
   background-color: #f6f9f9;
   text-align: center;
+  @media screen and (min-width: 900px) {
+    text-align: left;
+  }
 
   .logo {
     display: inline-block;
     margin-top: 30px;
     color: #2d3950;
-    font:700 30px/20px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
     text-transform: uppercase;
 
     img {
