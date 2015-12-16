@@ -128,6 +128,22 @@ img {
       color: #2d3950;
       font-size: 22px;
     }
+    @media screen and (min-width: 600px) {
+      @include span(10 of 12);
+      @include push(1);
+    }
+    @media screen and (min-width: 768px) {
+      li {
+        @include span(6 of 12);
+      }
+      li:nth-child(2) {
+      @include span(6 of 12 last);
+    }
+      li:last-child {
+        @include span(6 of 12);
+        @include push(3);
+      }
+    }
   }
 }
 /*--------------------------------------PORTFOLIO------------------------------------------*/
@@ -185,44 +201,86 @@ img {
       margin: 10px 0 40px;
       text-align: center;
     }
+  }
+  .contact-form {
+    max-width: 555px;
     input,
     textarea {
       width: 100%;
+      padding: 15px;
       background: none;
       border: 1px solid #999;
       border-radius: 2px;
+      font-size: 15px;
+      //&:focus {
+      //  border: 1px solid white;
+      //  border-radius: 2px;
+      //}
+    }
+    input {
       &[type="text"],
       &[type="email"] {
         height: 62px;
+        margin-bottom: 10px;
       }
-      //&[type="email"] {
-      //
-      //}
       &[type="checkbox"] {
-
+        width: auto;
+        margin: 15px;
+        background-color: rgba(246, 249, 249, 0.54);
+        border: 1px solid #9aa1ab;
+        border-radius: 2px;
       }
       &[type="submit"] {
         width: 142px;
         height: 47px;
+        margin-bottom: 20px;
         border: 1px solid #15a4fa;
         border-radius: 2px;
         color: #fff;
+        cursor: pointer;
+        transition: all 0.7s;
+        &:hover {
+          background-color: #15a4fa;
+        }
+      }
+    }
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+    @media screen and (min-width: 600px) {
+      @include span(10 of 12);
+      @include push(1);
+      li:nth-child(4) {
+        float: left;
+        margin-top: 20px;
+      }
+      li:last-child {
+        float: right;
+        margin: 20px 0;
       }
     }
   }
 }
 /*---------------------------------------------FOOTER-----------------------------------------*/
 footer {
-  margin: 15px 0;
-  height: 60px;
+  background: #f6f9f9;
   text-align: center;
   .copyright {
-    //float: left;
-    margin-bottom: 5px;
+    margin: 15px 0 5px;
     font-size: 15px;
+    @media screen and (min-width: 600px) {
+      float: left;
+      line-height: 4;
+    }
   }
   .social-network {
-    //float: right;
+    margin-bottom: 20px;
+    @media screen and (min-width: 600px) {
+      float: right;
+      margin-bottom: 0;
+      line-height: 4;
+    }
     li {
       display: inline-block;
       margin-right: 10px;
@@ -231,10 +289,23 @@ footer {
     .fa {
       width: 40px;
       height: 40px;
-      background-color: #15a4fa;
+      background: #15a4fa;
       border-radius: 2px;
       color: #fff;
       line-height: 2;
+      transition: all 0.8s;
+    }
+    .fa-facebook:hover {
+      background: #3b5998;
+    }
+    .fa-twitter:hover {
+      background: #55acee;
+    }
+    .fa-google-plus:hover {
+      background: #dd4b39;
+    }
+    .fa-linkedin:hover {
+      background: #0976b4;
     }
   }
 }
