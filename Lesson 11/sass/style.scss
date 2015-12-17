@@ -12,16 +12,19 @@
 
 @include border-box-sizing();
 
+
+a:link, a:visited {
+  text-decoration: none;
+}
+:focus {
+  outline:none;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   color: #999;
   font-size: 20px;
 }
-
-a:link, a:visited {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -73,7 +76,7 @@ img {
     border-radius: 2px;
     font-size: 18px;
     color: #fff;
-    transition: all 0.8s;
+    transition: all 0.6s;
     &:hover {
       background-color: #15a4fa;
       border: 3px solid #15a4fa;
@@ -91,17 +94,19 @@ img {
     margin-left:auto;
     margin-right:auto;
     color: #fff;
-    transition: all 0.6s;
-    &:hover {
-      font-size: 35px;
-    }
+    .fa-chevron-down {
+      transition: all 0.6s;
+      &:hover {
+        font-size: 35px;
+      }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       bottom: 90px;
       font-size: 35px;
       &:hover {
         font-size: 55px;
       }
+    }
     }
   }
 }
@@ -138,7 +143,7 @@ img {
        height: 100px;
        margin-top: 40px;
        border-radius: 2px;
-       background-color: #5fc3ff;
+       background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
        color: #fff;
        line-height: 2.5;
     }
@@ -234,12 +239,14 @@ img {
       border: 1px solid #999;
       border-radius: 2px;
       font-size: 15px;
-      //&:focus {
-      //  border: 1px solid white;
-      //  border-radius: 2px;
-      //}
+      &:focus {
+        border: 1px solid #fff;
+      }
+      &:focus::-webkit-input-placeholder {
+        color: #fff;
+      }
     }
-    input {
+  input {
       &[type="text"],
       &[type="email"] {
         height: 62px;
@@ -284,6 +291,12 @@ img {
       @media screen and (min-width: 900px) {
         width: span(6);
         margin: 0 auto;
+        input {
+          &[type="text"],
+          &[type="email"] {
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }
