@@ -1,0 +1,47 @@
+/*------------------------------------@mixin LOGO------------------------------------*/
+
+@mixin logo {
+  font-family: 'Pacifico', sans-serif;
+  font-size: 28px;
+  span {
+    font-family: 'OpenSans';
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.3);
+    &:before {
+      display: inline-block;
+      content: "|";
+      width: 40px;
+      text-align: center;
+      color: #32b0ee;
+      font-size: 16px;
+    }
+  }
+}
+
+
+/*---------------------------@mixin heart (.SECTION-TITLE)------------------------*/
+@mixin heart {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  text-align: center;
+  color: #062033;
+
+  &:before,
+  &:after {
+    display: inline-block;
+    height: 1px;
+    content: " ";
+    background-color: #062033;
+    opacity: 0.1;
+    width: 60px;
+  }
+
+  &:before {
+    margin: 0 10px 3px 20px;
+  }
+  &:after {
+    margin: 0 20px 3px 10px;
+  }
+}

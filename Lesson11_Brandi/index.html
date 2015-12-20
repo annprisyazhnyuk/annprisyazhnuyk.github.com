@@ -10,6 +10,13 @@
 </head>
 <body>
 <div class="wrapper">
+    <div class="slider">
+        <ul class="slides">
+            <li class="slide"><img src="images/bg-header1.jpg"></li>
+            <li class="slide"><img src="images/bg-header0.jpg"></li>
+            <li class="slide"><img src="images/bg-header2.jpg"></li>
+        </ul>
+    </div>
     <div id="home">
         <div class="header-overlay">
             <header>
@@ -19,11 +26,11 @@
                     </h1>
                     <nav>
                         <ul class="navigation">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#works">Works</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                         <span class="fa fa-bars header-nav"></span>
                     </nav>
@@ -33,18 +40,35 @@
         <section class="hero">
             <div class="container">
                 <h2 class="title">Meet Brandi!
-                    <span class="creative">/creative </span><span>one page template.</span></h2>
+                    <span class="color">/creative </span><span>one page template.</span></h2>
                 <h3>We are a team of professionals</h3>
                 <ul class="social-hero">
-                    <li><a href="#"><span class="fa fa-twitter fa-2x"></span></a></li>
-                    <li><a href="#"><span class="fa fa-facebook fa-2x"></span></a></li>
-                    <li><a href="#"><span class="fa fa-google-plus fa-2x"></span></a></li>
-                    <li><a href="#"><span class="fa fa-dribbble fa-2x"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                    <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
                 </ul>
             </div>
         </section>
     </div>
     <section id="features">
+        <div class="static">
+            <div class="container">
+            <h1>
+                <a href="#" class="logo">Brandi  <span>I’am your tag line</span></a>
+            </h1>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <span class="fa fa-bars header-nav"></span>
+            </nav>
+            </div>
+        </div>
         <div class="container">
             <h2 class="section-title">Features</h2>
             <span class="heart">&#9825;</span>
@@ -76,73 +100,73 @@
             <span class="heart">&#9825;</span>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
             <ul class="filter">
-                <li><a href="#">All</a></li>
-                <li><a href="#">Branding</a></li>
-                <li><a href="#">Web</a></li>
-                <li><a href="#">Logo Design</a></li>
-                <li><a href="#">Photography</a></li>
+                <li data-filter="*" class="is-checked"><a href="#">All</a></li>
+                <li data-filter=".branding"><a href="#">Branding</a></li>
+                <li data-filter=".web"><a href="#">Web</a></li>
+                <li data-filter=".logo-design"><a href="#">Logo Design</a></li>
+                <li data-filter=".photography"><a href="#">Photography</a></li>
             </ul>
-            <ul class="work-item">
-                <li>
+            <ul class="grid">
+                <li class="work-item branding photography">
                     <img src="images/layer-15.jpg" alt="">
                     <div class="filter-rollover">
-                        <span class="fa fa-eye"></span>
+                        <a href="#"><span class="fa fa-eye"></span></a>
                         <h4>Labore et dolore magnam
                             <span>Photography</span></h4>
                     </div>
                 </li>
-                <li>
+                <li class="work-item web photography logo-design">
                     <img src="images/layer-17.jpg" alt="">
                     <div class="filter-rollover">
-                        <span class="fa fa-eye"></span>
+                        <a href="#"><span class="fa fa-eye"></span></a>
                         <h4>Labore et dolore magnam
                             <span>Photography</span></h4>
                     </div>
                 </li>
-                <li>
+                <li class="work-item logo-design">
                     <img src="images/layer-19.jpg" alt="">
                     <div class="filter-rollover">
-                        <span class="fa fa-eye"></span>
+                        <a href="#"><span class="fa fa-eye"></span></a>
                         <h4>Labore et dolore magnam
                             <span>Photography</span></h4>
                     </div>
                 </li>
-                <li>
+                <li class="work-item branding photography">
                     <img src="images/layer-18.jpg" alt="">
                     <div class="filter-rollover">
-                        <span class="fa fa-eye"></span>
+                        <a href="#"><span class="fa fa-eye"></span></a>
                         <h4>Labore et dolore magnam
                             <span>Photography</span></h4>
                     </div>
                 </li>
-                <li>
+                <li class="work-item photography">
                     <img src="images/layer-22.jpg" alt="">
                     <div class="filter-rollover">
-                        <span class="fa fa-eye"></span>
+                        <a href="#"><span class="fa fa-eye"></span></a>
                         <h4>Labore et dolore magnam
                             <span>Photography</span></h4>
                     </div>
                 </li>
-                <li>
+                <li class="work-item web logo-design">
                     <img src="images/layer-20.jpg" alt="">
                     <div class="filter-rollover">
-                        <span class="fa fa-eye"></span>
+                        <a href="#"><span class="fa fa-eye"></span></a>
                         <h4>Labore et dolore magnam
                             <span>Photography</span></h4>
                     </div>
                 </li>
-                <li>
+                <li class="work-item logo-design photography">
                     <img src="images/layer-13.jpg" alt="">
                     <div class="filter-rollover">
-                        <span class="fa fa-eye"></span>
+                        <a href="#"><span class="fa fa-eye"></span></a>
                         <h4>Labore et dolore magnam
                             <span>Photography</span></h4>
                     </div>
                 </li>
-                <li>
+                <li class="work-item web branding">
                     <img src="images/layer-21.jpg" alt="">
                     <div class="filter-rollover">
-                        <span class="fa fa-eye"></span>
+                        <a href="#"><span class="fa fa-eye"></span></a>
                         <h4>Labore et dolore magnam
                             <span>Photography</span></h4>
                     </div>
@@ -306,7 +330,7 @@
             <div class="footer-single">
                 <h6>Subscribe </h6>
                 <form action="#" class="subscribe">
-                    <input type="text" name="subscribe">
+                    <input type="email" name="email" title="Email">
                     <input type="submit" value="&#8594;">
                 </form>
                 <p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -333,6 +357,10 @@
     </footer>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
+<script src="js/isotop.js"></script>
+<script src="js/jquery.glide.js"></script>
+<script src="js/slider.js"></script>
 <script src="js/navigation.js" type="text/javascript"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <script src="js/map.js" type="text/javascript"></script>
