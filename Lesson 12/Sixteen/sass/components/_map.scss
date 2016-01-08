@@ -1,0 +1,13 @@
+/*---------------------------------------MAP-----------------------------------------*/
+#map-canvas {
+  height: 500px;
+}
+#map-canvas:after {
+  position: absolute;
+  top: 20%;
+  right: 45%;
+  width: 85px;
+  height: 110px;
+  content: "";
+  background: url("../images/marker.png") no-repeat;
+}

@@ -1,0 +1,20 @@
+@mixin section-title {
+  margin: 50px 0 35px;
+  color: #424242;
+  font: 700 36px/26px 'HelveticaNeue';
+  white-space: pre-line;
+  span {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  &:after {
+    content: "";
+    display: block;
+    margin: 15px auto 0;
+    width: 47px;
+    height: 5px;
+  }
+  @media screen and (min-width: 900px){
+    margin-top: 100px;
+  }
+}

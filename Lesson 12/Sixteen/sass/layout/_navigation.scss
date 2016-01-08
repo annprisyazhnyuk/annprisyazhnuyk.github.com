@@ -1,0 +1,51 @@
+/*--------------------------------NAVIGATION---------------------------------------*/
+nav {
+  height: auto;
+  ul {
+    width: 100%;
+    display: block;
+    height: auto;
+    display: none;
+    background: #acd373;
+  }
+  li {
+    text-align: center;
+    width: 100%;
+    margin: 15px;
+    a {
+      font-weight: 900;
+      text-transform: uppercase;
+      &:hover,
+      .active{
+        border-bottom: 3px solid #f2f2f2;
+      }
+    }
+  }
+  .fa-bars {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #ebebeb;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    @include span(3);
+  }
+  nav {
+    @include span(9 last);
+    ul {
+      display: block;
+      padding-top: 14px;
+      text-align: right;
+      li {
+        display: inline-block;
+        margin: 10px 15px 0 0;
+        width: auto;
+     }
+   }
+    .fa-bars {
+      display: none;
+    }
+  }
+}

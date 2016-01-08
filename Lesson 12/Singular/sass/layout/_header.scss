@@ -1,0 +1,20 @@
+/*------------------------------HEADER----------------------------------------*/
+header {
+  position: relative;
+  margin-top: 48px;
+  line-height: 1;
+  text-align: left;
+  h1 {
+    display: inline-block;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    white-space: pre-line;
+    span {
+      font-size: 12px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+}

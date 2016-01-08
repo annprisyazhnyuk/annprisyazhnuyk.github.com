@@ -1,0 +1,53 @@
+@mixin learn-more {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 14px 22px;
+  border: 1px solid #acd373;
+  color: #acd373;
+  font-style: italic;
+  transition: all 0.6s;
+  &:hover {
+    background: #acd373;
+    color: #ebebeb;
+  }
+}
+
+@mixin title {
+  margin-bottom: 20px;
+  white-space: pre-line;
+  line-height: 2.5;
+  text-transform: uppercase;
+  span {
+    color: #9abd67;
+  }
+  p {
+    color: #454545;
+    font: 400 18px 'DroidSerif', sans-serif;
+    text-transform: none;
+  }
+}
+
+@mixin title-decor {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  text-align: center;
+  color: rgba(68, 68, 68, 0.9);
+
+  &:before,
+  &:after {
+    display: inline-block;
+    height: 1px;
+    width: 63px;
+    content: " ";
+    background-color: rgba(68, 68, 68, 0.65);
+  }
+
+  &:before {
+    margin: 0 -1px 5px 20px;
+  }
+  &:after {
+    margin: 0 20px 5px -1px;
+  }
+}

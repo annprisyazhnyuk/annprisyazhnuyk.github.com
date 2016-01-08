@@ -1,0 +1,47 @@
+/*--------------------------------FOOTER--------------------------------*/
+footer {
+  background-color: #222;
+  .copyright {
+    font-size: 13px;
+    color: #fff;
+    @media screen and (min-width: 600px) {
+      font-size: 14px;
+    }
+  }
+  .social {
+    li {
+      display: inline-block;
+      span {
+        width: 50px;
+        height: 49px;
+      }
+      .fa {
+        color: #fff;
+        line-height: 2.5;
+      }
+      .fa-behance {
+        background-color: #018ada;
+      }
+      .fa-facebook {
+        background-color: #3c5a98;
+      }
+      .fa-pinterest-p {
+        background-color: #d13f3f;
+      }
+      .fa-dribbble {
+        background-color: #e95c93;
+      }
+    }
+  }
+  @media screen and (min-width: 900px) {
+    height: 150px;
+    line-height: 7.5;
+    .copyright {
+      @include span(5 first);
+      line-height: 10.7;
+    }
+    .social {
+      @include span(4 last);
+    }
+  }
+}

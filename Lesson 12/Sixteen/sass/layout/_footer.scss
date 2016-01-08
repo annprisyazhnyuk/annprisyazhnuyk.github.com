@@ -1,0 +1,35 @@
+/*-----------------------------------FOOTER------------------------------------------*/
+footer {
+  overflow: hidden;
+  background-color: #9abd67;
+  color: $second-color;
+  text-align: center;
+  .copyright {
+    display: block;
+    margin-top: 40px;
+    @media screen and (min-width: 1024px) {
+      @include span(4 first);
+      margin-top: 27px;
+    }
+  }
+  .social-footer {
+    padding: 10px 0;
+    @media screen and (min-width: 1024px) {
+      @include span(7 last);
+    }
+    li {
+      display: inline-block;
+      span {
+        width: 35px;
+        height: 35px;
+        margin: 0 10px 10px 0;
+        background-color: #f7f7f7;
+        border-radius: 50%;
+      }
+      .fa {
+        color: #9abd67;
+        line-height: 2;
+      }
+    }
+  }
+}
