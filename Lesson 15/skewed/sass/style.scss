@@ -1,0 +1,593 @@
+// Screen
+// ======
+@import "compass/reset";
+@import "grids";
+@import "mixin";
+
+@include border-box-sizing();
+
+body {
+  color: #b1b1b1;
+  font: 400 16px 'Roboto';
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+a:link, a:visited {
+  font: 500 14px 'Roboto';
+  color: #bbb;
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  @include container();
+  overflow: hidden;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/*--------------------------------hero--------------------------*/
+.hero {
+  background: url("../images/intro.jpg") center no-repeat;
+  background-size: cover;
+  height: 120vh;
+  /*----------------------------header-------------------------*/
+  header {
+    position: relative;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.35);
+    .logo {
+      float: left;
+      margin-top: 30px;
+    }
+  }
+  .slider {
+    max-width: 990px;
+    margin: 50px auto 0;
+    @media screen and (min-width: 600px) {
+      margin-top: 100px;
+    }
+    li {
+      h2 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 100;
+        text-align: center;
+        span {
+          color: #f7cc4b;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 50px;
+        }
+      }
+    }
+    @media screen and (min-width: 900px){
+      li {
+        h2 {
+          font-size: 70px;
+        }
+      }
+    }
+    @media screen and (min-width: 1200px){
+      margin-top: 175px;
+      li {
+        h2 {
+          font-size: 82px;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------navigation-----------------------*/
+.navigation {
+  display: none;
+  margin-top: 40px;
+  @media screen and (min-width: 900px) {
+    display: block;
+    float: right;
+  }
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    a {
+      text-transform: uppercase;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+.fa-bars {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  font-size: 20px;
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+/*---------------------------about-us-----------------------*/
+#about-us {
+  .section-title {
+    @include section-title;
+    color: #222;
+  }
+  .subtitle {
+    @include subtitle;
+  }
+  .find-more {
+    @include find-button;
+  }
+  @media screen and (min-width: 768px) {
+   .subtitle {
+     display: block;
+     margin-bottom: 51px;
+   }
+    p {
+      max-width: 515px;
+      margin: 51px auto 10px;
+    }
+    .find-more {
+      margin-bottom: 160px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .section-title,
+    .subtitle,
+    p {
+      @include span(6 of 12);
+      text-align: left;
+    }
+    .find-more {
+      float: left;
+    }
+    p {
+      margin-top: 0;
+    }
+    img {
+      @include span(6 of 12 last);
+      overflow: hidden;
+      margin-top: -50px;
+      margin-bottom: 70px;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+/*-----------------------------------video------------------------------*/
+#video {
+  margin: 0 -50px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  background-color: #f7cc4b;
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  .container {
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+    padding: 50px 60px;
+  }
+  .section-title {
+    @include section-title;
+    color: #fff;
+  }
+  .subtitle {
+    @include subtitle;
+    color: #222;
+  }
+  @media screen and (min-width: 768px) {
+    .subtitle {
+      margin-bottom: 62px;
+    }
+    .video {
+      margin-bottom: 100px;
+    }
+  }
+  .video {
+    display: none;
+    iframe {
+      width: 300px;
+      @media screen and (min-width: 600px) {
+        width: 560px;
+      }
+    }
+  }
+}
+
+/*-----------------------------team-------------------------*/
+#team {
+  .section-title {
+    @include section-title;
+    color: #222;
+  }
+  .subtitle {
+    @include subtitle;
+  }
+  .person {
+    li {
+      margin-bottom: 20px;
+      h4 {
+        color: #222;
+        font: 300 24px/28px 'Roboto';
+      }
+      span {
+        color: #f7cc4b;
+        font: 400 16px/28px 'Roboto';
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .subtitle {
+      margin-bottom: 51px;
+    }
+    .person {
+      margin-bottom: 76px;
+    }
+  }
+}
+
+/*---------------------------------parallax-------------------------*/
+#parallax {
+  background: url("../images/parallax.jpg") center no-repeat;
+  background-size: cover;
+  .section-title {
+    @include section-title;
+    margin-top: 100px;
+    color: #fff;
+  }
+  .subtitle {
+    @include subtitle;
+    margin-bottom: 51px;
+  }
+  p {
+    max-width: 569px;
+    margin: 0 auto;
+    color: #b1b1b1;
+    font-size: 16px;
+  }
+  .find-more {
+    @include find-button;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: 900px) {
+    .section-title {
+      margin-top: 280px;
+    }
+    .find-more {
+      margin-bottom: 250px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    height: 140vh;
+    .section-title {
+      margin-top: 360px;
+    }
+    .find-more {
+      margin-bottom: 320px;
+    }
+  }
+}
+
+/*------------------------------principles--------------------*/
+#principles {
+  .section-title {
+    @include section-title;
+    color: #222;
+  }
+  .subtitle {
+    @include subtitle;
+  }
+  p {
+    max-width: 515px;
+    margin: 50px auto 0;
+  }
+  .find-more {
+    @include find-button;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    .subtitle {
+      margin-bottom: 51px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+   img {
+     @include span(6 of 12);
+     margin-top: -160px;
+     margin-bottom: 182px;
+   }
+    .section-title,
+    .subtitle,
+    p {
+      @include span(6 of 12 last);
+      text-align: left;
+    }
+    .section-title {
+      margin-top: 120px;
+    }
+    .subtitle {
+      margin-left: 50%;
+    }
+    p {
+      margin-top: 0;
+    }
+    .find-more {
+      float: right;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .section-title,
+    .subtitle {
+      padding-left: 30px;
+    }
+  }
+}
+
+/*-----------------------------------portfolio------------------------------*/
+#portfolio {
+  margin: 0 -50px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  background-color: #f7cc4b;
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  .container {
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+    padding: 20px 60px 70px;
+  }
+  .section-title {
+    @include section-title;
+    color: #fff;
+  }
+  .subtitle {
+    @include subtitle;
+    color: #444;
+    @media screen and (min-width: 768px){
+      margin-bottom: 51px;
+    }
+  }
+  /*--------------------------------------owl-carousel----------------------*/
+  #portfolio-slider .item{
+    margin: 3px;
+  }
+  #portfolio-slider .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .owl-wrapper-outer {
+    margin-bottom: 66px;
+  }
+  @media screen and (min-width: 768px) {
+    .slider {
+      margin-bottom: 170px;
+    }
+  }
+}
+
+/*----------------------------achievements---------------------------------*/
+#achievements {
+  .section-title {
+    @include section-title;
+    color: #222;
+  }
+  .subtitle {
+    @include subtitle;
+  }
+  .statistics {
+    position: relative;
+    margin-bottom: 35px;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      border: 1px solid #eee;
+    }
+    li {
+      display: inline-block;
+      margin-bottom: 40px;
+      white-space: pre-line;
+      .fa {
+        font-size: 80px;
+        color: #222;
+      }
+      .total {
+        display: inline-block;
+        margin: 30px 0;
+        color: #f7cc4b;
+        font-size: 84px;
+        font-weight: 300;
+        line-height: 35px;
+      }
+      h4 {
+        color: #666;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 75px;
+    }
+  }
+  .quote {
+    max-width: 929px;
+    margin: 0 auto;
+    font-size: 27px;
+    color: #222;
+    span {
+      color: #f7cc4b;
+    }
+    blockquote {
+      margin-bottom: 32px;
+    }
+    cite {
+      color: #bbb;
+      font-size: 16px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 149px;
+    }
+  }
+}
+
+/*-----------------------------------contact------------------------------*/
+#contact {
+  margin: 0 -50px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  background-color: #f7cc4b;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
+  .container {
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    padding: 20px 60px 70px;
+  }
+  .section-title {
+    @include section-title;
+    color: #fff;
+  }
+  .subtitle {
+    @include subtitle;
+    color: #222;
+  }
+  .subscribe {
+    li {
+      margin-bottom: 10px;
+      input[type='text'],
+      input[type='email'] {
+        width: 284px;
+        height: 50px;
+        background: none;
+        border: 2px solid #fff;
+        border-radius: 1px;
+        padding-left: 10px;
+        color: #fff;
+        font-size: 15px;
+      }
+      ::-webkit-input-placeholder {
+        padding-left: 10px;
+        color: #fff;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+      :focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+      :focus::-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      ::-moz-placeholder {
+        padding-left: 10px;
+        color: #fff;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+      input[type='submit'] {
+        width: 188px;
+        height: 50px;
+        background-color: #222;
+        border: 2px solid #222;
+        border-radius: 1px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          border: #f7cc4b;
+          box-shadow: inset 0 0 0 5px #f7cc4b;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .subtitle {
+      margin-bottom: 64px;
+    }
+    .subscribe {
+      margin-bottom: 94px;
+      li {
+        display: inline-block;
+        margin-right: 16px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------------footer-----------------------------*/
+footer {
+  position: relative;
+  z-index: 10;
+  background-color: #222;
+  .social {
+    padding: 50px 0 20px;
+    li {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      margin-right: 5px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      .fa {
+        color: #fff;
+        font-size: 25px;
+        line-height: 2;
+        text-align: center;
+      }
+    }
+    @media screen and (min-width: 900px) {
+      padding: 52px 0 32px;
+    }
+  }
+  .copyright {
+    margin-bottom: 40px;
+    color: #bbb;
+    span {
+      color: #f7cc4b;
+    }
+    @media screen and (min-width: 900px) {
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@mixin section-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 159px;
+  height: 31px;
+  background-color: #424147;
+  color: #ffea00;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+/*---------------------------------button hero------------------*/
+@mixin button {
+  display: inline-block;
+  height: 37px;
+  background-color: #000;
+  border-bottom: 3px solid #ffea00;
+  color: #fff;
+  font: 400 15px 'CenturyGothic';
+}
+
+/*-----------------------placeholder blog-page-------------------*/
+@mixin placeholder {
+  color: #737373;
+  font: 400 18px 'CenturyGothic';
+}
+
+
+/*--------------------------------post-corner single-post-------------------*/
+@mixin post-corner {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: -20px;
+    right: 70px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid #ffea00;
+  }
+}
+
+/*-----------------------------line single-post----------------------*/
+@mixin line {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    border: 1px solid #cacaca;
+  }
+}
+
+
+/*--------------------------------subtitle-post single-post------------------*/
+@mixin subtitle-post {
+  display: inline-block;
+  padding: 9px 21px 7px 20px;
+  background-color: #424147;
+  color: #ffea00;
+  font-size: 18px;
+  text-transform: uppercase;
+}

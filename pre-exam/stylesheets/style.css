@@ -1,0 +1,301 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  font: 300 16px 'Roboto', sans-serif;
+  color: #2f2f2f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 0 15px;
+  text-align: center;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*-------------------------------------------header--------------------------------*/
+header {
+  position: relative;
+  padding-top: 13px;
+  max-height: 80px;
+  background-color: white;
+}
+header h1 {
+  text-align: left;
+}
+header .logo img {
+  max-width: 241px;
+}
+@media screen and (min-width: 960px) {
+  header .logo img {
+    max-width: 281px;
+  }
+}
+header nav {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  header nav {
+    display: inline-block;
+  }
+  header nav li {
+    display: inline-block;
+  }
+}
+header .menu-header {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+header .menu-header:hover {
+  color: #c2265c;
+}
+
+/*-------------------------------------------intro-slider--------------------------------*/
+.intro-slider {
+  background-color: #c4275f;
+}
+.intro-slider .slider-item li {
+  margin: 20px 0;
+}
+.intro-slider .slider-item li .slider-content {
+  height: 170px;
+  width: 290px;
+  background-color: #6aad44;
+  color: #fff;
+  padding-top: 60px;
+}
+
+/*-------------------------------------------featured--------------------------------*/
+.section-title {
+  margin: 48px 0 29px;
+  color: #373737;
+  font: 500 20px 'Raleway';
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin-bottom: 49px;
+    font-size: 36px;
+  }
+}
+
+.featured {
+  background-color: #f3f3f3;
+}
+.featured .product-item li {
+  position: relative;
+  margin: 30px auto;
+  width: 263px;
+  height: 280px;
+  border: 3px solid #e1e1e1;
+}
+.featured .product-item li .product-title {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 260px;
+  height: 49px;
+  opacity: 0.9;
+  background-color: #e1e1e1;
+  font: 600 18px 'OpenSans';
+  padding-left: 13px;
+  text-align: left;
+  line-height: 3;
+}
+.featured .product-item li .rollover {
+  position: absolute;
+  top: 0;
+  width: 263px;
+  height: 277px;
+  opacity: 0;
+  background-color: #e1e1e1;
+}
+.featured .product-item li .rollover:hover {
+  opacity: 0.9;
+}
+@media screen and (min-width: 768px) {
+  .featured .product-item li {
+    margin: 0 15px 30px 0;
+  }
+}
+
+/*-------------------------------------------new-arrivals--------------------------------*/
+.new-arrivals h3 {
+  margin: 15px 0;
+  color: #434343;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+}
+.new-arrivals .read-more {
+  display: inline-block;
+  width: 107px;
+  height: 33px;
+  margin: 15px 0;
+  border: 1px solid #c93070;
+  color: #c93070;
+  font: 300 14px/24px 'Roboto';
+}
+
+/*-------------------------------------------enquiry--------------------------------*/
+.enquiry {
+  background-color: #f3f3f3;
+}
+.enquiry .best-products li {
+  position: relative;
+  width: 263px;
+  height: 280px;
+  margin: 30px auto;
+  border: 3px solid #e1e1e1;
+}
+.enquiry .best-products li .product-title {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 260px;
+  height: 49px;
+  opacity: 0.9;
+  background-color: #e1e1e1;
+  font: 600 18px 'OpenSans';
+  padding-left: 13px;
+  text-align: left;
+  line-height: 3;
+}
+.enquiry .best-products li .rollover {
+  position: absolute;
+  top: 0;
+  width: 263px;
+  height: 277px;
+  opacity: 0;
+  background-color: #e1e1e1;
+}
+.enquiry .best-products li .rollover:hover {
+  opacity: 0.9;
+}
+
+.contacts {
+  background-color: #c4275f;
+  color: #fff;
+}
+.contacts form {
+  margin-bottom: 40px;
+}
+.contacts form input[type="email"] {
+  width: 300px;
+  height: 62px;
+  background-color: white;
+}
+.contacts form ::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: #a4a4a4;
+  font-family: Raleway;
+}
+.contacts form ::-moz-placeholder {
+  padding-left: 10px;
+  color: #a4a4a4;
+  font-family: Raleway;
+}
+.contacts form input[type="submit"] {
+  width: 195px;
+  height: 62px;
+  border: none;
+  background-color: #b41e53;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pre-footer {
+  background-color: #e4e4e4;
+  padding: 15px 0;
+}
+.pre-footer .pre-footer-title {
+  color: #010101;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+footer {
+  background-color: #151515;
+}
