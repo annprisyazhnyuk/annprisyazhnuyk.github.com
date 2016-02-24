@@ -1,0 +1,391 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Eurofurenceregular';
+  src: url("../fonts/eurofurence__regular-webfont.eot");
+  src: url("../fonts/eurofurence__regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/eurofurence__regular-webfont.woff2") format("woff2"), url("../fonts/eurofurence__regular-webfont.woff") format("woff"), url("../fonts/eurofurence__regular-webfont.ttf") format("truetype"), url("../fonts/eurofurence__regular-webfont.svg#eurofurence_regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Global */
+body {
+  color: #606060;
+  font: 400 16px/20px 'Lato';
+}
+
+.container {
+  overflow: hidden;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media screen and (min-width: 980px) {
+  .container {
+    padding: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:link,
+:visited {
+  text-decoration: none;
+}
+
+/* Header */
+.site-header {
+  background-color: #292929;
+  box-shadow: inset 0 -6px 0 #1e1e1e;
+}
+
+.site-header h1 {
+  margin-top: 42px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .site-header h1 {
+    float: left;
+  }
+}
+
+.site-header .logo {
+  font: 400 40px 'Eurofurenceregular';
+  color: #fff;
+}
+
+.site-header .logo:after {
+  content: ".";
+  color: #58c93a;
+}
+
+/* Navigation Menu */
+@media screen and (min-width: 768px) {
+  .site-nav {
+    float: right;
+  }
+}
+.site-nav ul li {
+  margin: 10px 0;
+  text-align: center;
+  box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 transparent;
+}
+@media screen and (min-width: 768px) {
+  .site-nav ul li {
+    float: left;
+    width: 132px;
+    height: 130px;
+    margin: 0;
+  }
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul a:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 9px 0;
+  text-shadow: 0 1px 0 #1e1e1e;
+  color: #fff;
+  font: 700 16px 'Lato';
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .site-header nav ul li a:link,
+  .site-header nav ul a:visited {
+    line-height: 7;
+    display: block;
+  }
+}
+
+.site-header nav ul li a:hover {
+  box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
+  text-shadow: 0 1px 0 #1e1e1e;
+  color: #58c93a;
+}
+
+/* Content */
+#content .container {
+  padding-top: 80px;
+  border: 1px solid #e1e0e0;
+}
+
+/* Main */
+#main {
+  max-width: 620px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 980px) {
+  #main {
+    float: left;
+  }
+}
+
+#main .post {
+  padding-left: 21px;
+  max-width: 620px;
+  margin-bottom: 80px;
+}
+#main .post img {
+  margin-left: -21px;
+}
+
+.post-title {
+  margin: 20px 0 58px;
+}
+
+.post-title a {
+  color: #4f4e4e;
+  font-family: Lato;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.post-title a:hover {
+  color: #58c93a;
+}
+
+.continue-reading {
+  display: inline-block;
+  margin-top: 34px;
+  width: 186px;
+  height: 40px;
+  border-radius: 25px;
+  border: 2px solid #c2c2c2;
+  color: #c2c1c1;
+  font: 700 16px/2.5 'Lato';
+  text-align: center;
+}
+.continue-reading:hover {
+  background: #58c93a;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Secondary */
+#secondary {
+  overflow: hidden;
+  width: 279px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 980px) {
+  #secondary {
+    float: right;
+  }
+}
+
+#secondary aside {
+  margin-bottom: 80px;
+}
+
+/* Widget */
+.my_widget-title {
+  width: 256px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 23px;
+  background-color: #f8f8f8;
+  box-shadow: inset 3px 0 0 #58c93a;
+  color: #6c6969;
+  font: 700 16px/3.5 'Lato';
+  text-transform: uppercase;
+}
+
+/* Search form */
+.search-form {
+  position: relative;
+}
+
+.search-field {
+  width: 279px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: white;
+  border: 1px solid #e1e0e0;
+}
+
+.search-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 54px;
+  height: 49px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+::-moz-placeholder {
+  color: #b9b9b9;
+  font: 400 12px/20px 'Lato';
+}
+
+::-webkit-input-placeholder {
+  color: #b9b9b9;
+  font: 400 12px/20px 'Lato';
+}
+
+/* Subscribe form */
+#secondary .subscribe {
+  position: relative;
+}
+
+#secondary #email {
+  width: 257px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: white;
+  border: 1px solid #e1e0e0;
+}
+
+#secondary .send {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e1e0e0;
+  border-radius: 50%;
+  color: #e1e0e0;
+  cursor: pointer;
+}
+
+.about p {
+  padding: 0 26px 0 20px;
+}
+
+/* Pagination */
+#pagination {
+  overflow: hidden;
+  width: 100%;
+  border-top: 1px solid #e1e0e0;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 30px 0 39px;
+  color: #818181;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-next {
+  float: right;
+  padding-right: 30px;
+}
+
+.nav-previous {
+  float: left;
+  padding-left: 30px;
+}
+
+/* Site footer */
+.site-footer {
+  height: 315px;
+  background-color: #f8f8f8;
+  box-shadow: inset 0 1px 0 #e1e0e0;
+  text-align: center;
+}
+.site-footer .logo {
+  display: inline-block;
+  margin: 80px 0 32px;
+  font-family: Eurofurenceregular;
+  font-size: 40px;
+  font-weight: 400;
+  color: #292929;
+}
+
+.copyright {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  color: #a6a6a6;
+  font-weight: 400;
+}
+.copyright a {
+  color: #939292;
+}
+
+.social {
+  margin-top: 38px;
+}
+.social li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  background-color: #e5e5e5;
+  text-align: center;
+}
+.social li:last-child {
+  margin-right: 0;
+}
+.social li:hover {
+  background-color: #516fad;
+}
+.social li a {
+  color: #fff;
+  line-height: 2.5;
+}
