@@ -1,0 +1,515 @@
+@import "compass/reset";
+@import "grids";
+
+@font-face {
+  font-family: 'tonkycaps_awxregular';
+  src: url('fonts/9698-webfont.eot');
+  src: url('fonts/9698-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/9698-webfont.woff2') format('woff2'),
+  url('fonts/9698-webfont.woff') format('woff'),
+  url('fonts/9698-webfont.ttf') format('truetype'),
+  url('fonts/9698-webfont.svg#tonkycaps_awxregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@include border-box-sizing();
+.container {
+  @include container();
+  overflow: hidden;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/* ---------------------------- global style ---------------------------------------- */
+a:link, a:visited {
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  font: 300 16px 'Roboto', sans-serif;
+  color: #242424;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin button {
+  font-family: 'Arapey';
+  background: #AA1111;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* ---------------------------- HERO --------------------------------------------- */
+.hero-overlay {
+  background: rgba(61, 56, 62, 0.5);
+  width: 100%;
+  height: 80vh;
+
+}
+
+.hero {
+  background: url("images/52_123.jpg") center no-repeat;
+  background-size: cover;
+  height: 80vh;
+
+  .intro {
+    margin-top: 60px;
+    font-size: 30px;
+    color: #fff;
+
+    @media screen and (min-width: 500px) {
+      margin-top: 100px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 60px;
+      float: left;
+      width: 50%;
+    }
+
+    @media screen and (min-width: 900px) {
+      margin-top: 100px;
+      width: 30%;
+    }
+
+      /* --------------------------- SEE MY WORK --------------------------------- */
+    .see-work {
+      display: inline-block;
+      margin: 40px auto;
+      width: 250px;
+      height: 50px;
+      border-radius: 5px;
+
+    @include button;
+    }
+  }
+}
+
+
+/* ----------------------------- HEADER ------------------------------------- */
+header {
+  background: rgba(0, 0, 0, 0.19);
+  nav {
+    margin: 20px 0;
+    float: right;
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+
+      a {
+        font-family: 'Arapey';
+        color: #242424;
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.section-header {
+  background: rgba(144, 132, 147, 0.45);
+}
+
+.hero {
+  header {
+    overflow: hidden;
+
+    nav {
+      float: left;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* ------------------------------- PORTFOLIO --------------------------------- */
+.about {
+  overflow: hidden;
+
+  .portfolio,
+  .resume {
+    width: 50%;
+    height: 300px;
+
+    .section-title {
+      margin-top: 130px;
+
+      a {
+        color: #AA1111;
+        font-size: 30px;
+        font-family: 'Arapey';
+      }
+    }
+  }
+
+  .portfolio {
+    float: left;
+    background: rgba(144, 132, 147, 0.45);
+  }
+  .resume {
+    float: right;
+    background: rgba(103, 94, 105, 0.45);
+  }
+}
+
+/* ------------------------------------ FOOTER ------------------------------ */
+footer {
+  background: #000;
+  min-height: 150px;
+
+  #social {
+    margin-top: 50px;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 30px;
+
+      width: 55px;
+      height: 55px;
+      border-radius: 100%;
+      line-height: 1.8;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    .facebook {
+      background: #3b5998;
+    }
+
+    .google {
+      background: #d34836;
+    }
+
+    .vk {
+      background: #45668e;
+    }
+
+    .skype {
+      background: #00aff0;
+    }
+
+    .mail {
+      background: #da3740;
+
+    }
+  }
+}
+
+/* -------------------------------- PAGE PORTFOLIO -------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Arapey:400italic);
+
+#portfolio {
+  background: rgba(144, 132, 147, 0.45);
+  min-height: 100vh;
+
+  .container {
+    max-width: 1270px;
+  }
+
+  .grid {
+    overflow: hidden;
+    padding: 60px;
+    margin: 0 auto 90px;
+    max-width: 1200px;
+  }
+
+  .grid-item {
+    position: relative;
+    float: left;
+    width: calc(33.33% - 10px);
+    margin: -90px 5px 0;
+
+    border-left: 4px solid #dedede;
+    border-right: 4px solid #dedede;
+    transition: all 0.5s;
+
+    overflow: hidden;
+
+    -webkit-clip-path: polygon(
+                    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+    );
+
+    clip-path: polygon(
+                    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+    );
+
+    -webkit-shape-outside: polygon(
+                    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+    );
+
+    &:before {
+      display: block;
+      padding-top: 112.5%;
+      content: '';
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(7n - 1),
+    &:nth-child(1) {
+      margin-left: 185px;
+    }
+  }
+
+  .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-position: center center;
+    background-size: cover;
+
+    overflow: hidden;
+
+    -webkit-clip-path: polygon(
+                    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+    );
+
+    clip-path: polygon(
+                    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+    );
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    &:before {
+      background: rgba(purple, 0.25);
+    }
+
+    &:after {
+      background: linear-gradient(to top, transparent, rgba(black, 0.5), transparent);
+    }
+  }
+
+  .rollover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+
+    opacity: 0;
+    text-align: center;
+    color: white;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.5s;
+
+    -webkit-shape-outside: polygon(
+                    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+    );
+
+    shape-outside: polygon(
+                    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+    );
+  }
+
+  h2,
+  h3 {
+    font-family: 'Arapey';
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  h2 {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 56px;
+    color: #242424;
+  }
+
+  h3 {
+    font-size: 32px;
+
+    &:before,
+    &:after {
+      display: inline-block;
+      margin: 0 0.5em;
+      width: 0.75em;
+      height: 0.03em;
+
+      background: turquoise;
+      content: '';
+      vertical-align: middle;
+      transition: all 0.3s;
+    }
+  }
+
+  .desc {
+    margin: 1em 0 0;
+    font: bold 11px/1.5 'ATC Overlook';
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: turquoise;
+  }
+
+  .grid-item:hover {
+
+    .img:before,
+    .img:after,
+    .rollover {
+      opacity: 1;
+    }
+
+    .rollover {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+}
+
+/* ---------------------------------- RESUME ---------------------------------- */
+#resume,
+.my-work {
+  background: rgba(103, 94, 105, 0.45);
+
+  .section-title {
+    margin-top: 90px;
+    color: #242424;
+
+    font: 400 56px 'Arapey';
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+/* --------------------------------- ABOUT DESCRIPTION ---------------------------------- */
+.description {
+  overflow: hidden;
+  max-width: 700px;
+  margin: 50px auto;
+
+  img {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    -webkit-filter: grayscale(100%);
+  }
+  p {
+    font: 21px/1.5 'ATC Overlook';
+  }
+  @media screen and (min-width: 600px) {
+    img {
+      float: left;
+    }
+
+    p {
+      margin-top: 50px;
+      @include span(7 of 12);
+    }
+  }
+}
+
+/* ------------------------------------ MY WORK ------------------------------- */
+.my-work {
+  overflow: hidden;
+  padding-top: 50px;
+
+  /* ----------------------------------------- ABOUT WORK -------------------------------- */
+  .about-work {
+    width: 100%;
+    background: rgba(103, 94, 105, 0.45);
+    padding-bottom: 53px;
+
+    @media screen and (min-width: 680px) {
+      width: 50%;
+      float: left;
+    }
+
+    .skills-title {
+      padding: 30px 0;
+      @include button;
+      background: none;
+      font-size: 25px;
+    }
+
+    .skills {
+      padding: 0 40px 0 80px;
+      font: 18px/2.5 'ATC Overlook';
+      text-align: left;
+
+      li {
+        border-bottom: 1.5px solid #888888;
+      }
+    }
+  }
+
+  /* ---------------------------------------- WORK --------------------------------------- */
+  .work {
+    width: 100%;
+    position: relative;
+    background: #aa1111;
+
+    @media screen and (min-width: 680px){
+      float: right;
+      width: 50%;
+      height: 515px;
+      min-height: 380px;
+    }
+
+    @media screen and (min-width: 717px) {
+      height: 470px;
+    }
+
+    @media screen and (min-width: 771px) {
+      height: 425px;
+    }
+
+    @media screen and (min-width: 787px) {
+      height: 425px;
+    }
+
+    @media screen and (min-width: 1050px) {
+      height: 380px;
+    }
+
+    .rollover {
+      display: block;
+      height: 400px;
+    }
+
+    a {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include button;
+      font-size: 30px;
+    }
+  }
+}
