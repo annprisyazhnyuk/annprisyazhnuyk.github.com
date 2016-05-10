@@ -251,6 +251,7 @@ img {
 #parallax {
   background: url("../images/parallax.jpg") center no-repeat;
   background-size: cover;
+
   .section-title {
     @include section-title;
     margin-top: 100px;
@@ -297,6 +298,7 @@ img {
   }
   .subtitle {
     @include subtitle;
+    display: block;
   }
   p {
     max-width: 515px;

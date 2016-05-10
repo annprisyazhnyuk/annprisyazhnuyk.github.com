@@ -99,14 +99,16 @@
             <h2 class="section-title">Works</h2>
             <span class="heart">&#9825;</span>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-            <ul class="filter">
-                <li data-filter="*" class="is-checked"><a href="#">All</a></li>
-                <li data-filter=".branding"><a href="#">Branding</a></li>
-                <li data-filter=".web"><a href="#">Web</a></li>
-                <li data-filter=".logo-design"><a href="#">Logo Design</a></li>
-                <li data-filter=".photography"><a href="#">Photography</a></li>
-            </ul>
-            <ul class="grid">
+       <div id="filters">
+           <ul>
+               <li class="filter" data-filter="*">All</li>
+               <li class="filter" data-filter=".branding">Branding</li>
+               <li class="filter" data-filter=".web">Web</li>
+               <li class="filter" data-filter=".logo-design">Logo Design</li>
+               <li class="filter" data-filter=".photography">Photography</li>
+           </ul>
+       </div>
+            <ul class="grid" id="mixit-container">
                 <li class="work-item branding photography">
                     <img src="images/layer-15.jpg" alt="">
                     <div class="filter-rollover">
@@ -357,10 +359,17 @@
     </footer>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
-<script src="js/isotop.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>-->
+<!--<script src="js/isotop.js"></script>-->
+<!-- mixit slider -->
+<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+
 <script src="js/jquery.glide.js"></script>
 <script src="js/slider.js"></script>
+<!-- Counter -->
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+
 <script src="js/navigation.js" type="text/javascript"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <script src="js/map.js" type="text/javascript"></script>

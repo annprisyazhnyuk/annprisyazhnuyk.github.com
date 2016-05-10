@@ -472,6 +472,7 @@ img {
   margin-bottom: 25px;
   color: #f7cc4b;
   font: 300 10px 'Roboto';
+  display: block;
 }
 @media screen and (min-width: 900px) {
   #principles .subtitle {

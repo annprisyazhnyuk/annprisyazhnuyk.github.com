@@ -493,29 +493,31 @@ nav .header-nav {
     margin: 0 auto 45px;
   }
 }
-#works .filter li {
+#works #filters li {
   display: inline-block;
   margin: 10px 10px 15px;
   font-size: 14px;
   font-weight: 700;
-}
-@media screen and (min-width: 480px) {
-  #works .filter li {
-    margin-bottom: 43px;
-  }
-}
-#works .filter li a {
   padding: 10px 20px;
   border-radius: 6px;
   color: #062033;
   transition: all 0.7s;
+  cursor: pointer;
 }
-#works .filter li a:hover {
+@media screen and (min-width: 480px) {
+  #works #filters li {
+    margin-bottom: 43px;
+  }
+}
+#works #filters li:hover {
   background-color: #0eb493;
   color: #fff;
 }
 #works .grid {
   overflow: hidden;
+}
+#works .grid #mixit-container .work-item {
+  display: none;
 }
 #works .grid li {
   position: relative;

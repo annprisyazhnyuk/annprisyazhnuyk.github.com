@@ -40,3 +40,22 @@ $(document).ready(function(){
         $('.vb').remove();
     })
 });
+
+/* ----------------------- COUNTER ----------------------------------------- */
+$(document).ready(function(){
+    jQuery('.total').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
+    wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+    );
+    wow.init();
+});
